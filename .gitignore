@@ -37,6 +37,7 @@ workspace/reports/*.csv
 *.jpeg
 *.png
 *.gif
+!qyro_pipeline_banner.png
 
 # Virtual environments
 venv/
