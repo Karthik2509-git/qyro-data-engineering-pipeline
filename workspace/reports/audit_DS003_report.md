@@ -1,0 +1,655 @@
+# Annotation Sanity Audit: DS003
+
+*Generated on: 2026-06-28 19:26:40*
+
+## Executive Summary
+Sanity checks on box dimensions and overlaps.
+
+## Audit Verification Breakdown
+- **Total Images Checked**: 1130
+- **Clean (Passed Annotations)**: 490
+- **Logical Rejections**: 587
+- **Flagged for Review (Overlaps/Elongated/Giant)**: 53
+
+
+## Failed/Flagged Annotations Audit Log
+- Image `DS003_00002` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00002_000_std.
+- Image `DS003_00003` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00003_000_std.
+- Image `DS003_00004` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00004_000_std.
+- Image `DS003_00005` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00005_000_std.
+- Image `DS003_00008` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00008_000_std.
+- Image `DS003_00010` [REJECTED]: Elongated box detected in ANN_DS003_00010_000_std (aspect: 5.09).; Box boundaries exceed frame edge in ANN_DS003_00010_001_std.; Elongated box detected in ANN_DS003_00010_001_std (aspect: 5.66).
+- Image `DS003_00015` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00015_000_std.
+- Image `DS003_00018` [REJECTED]: Box dimensions (0.00, 0.18) must be positive in ANN_DS003_00018_000_std.; Box boundaries exceed frame edge in ANN_DS003_00018_000_std.; Box area (0.000000) below threshold (0.000100) in ANN_DS003_00018_000_std.
+- Image `DS003_00019` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00019_000_std.
+- Image `DS003_00020` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00020_001_std.
+- Image `DS003_00021` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00021_000_std.
+- Image `DS003_00022` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00022_000_std.; Giant box detected in ANN_DS003_00022_000_std (covers 86.6% of image) - potential cluster box.
+- Image `DS003_00023` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00023_000_std.
+- Image `DS003_00024` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00024_000_std.
+- Image `DS003_00025` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00025_000_std.
+- Image `DS003_00026` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00026_000_std.; Elongated box detected in ANN_DS003_00026_000_std (aspect: 14.07).
+- Image `DS003_00027` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00027_000_std.
+- Image `DS003_00028` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00028_000_std.
+- Image `DS003_00030` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00030_000_std (covers 97.3% of image) - potential cluster box.
+- Image `DS003_00031` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00031_000_std.; Giant box detected in ANN_DS003_00031_000_std (covers 83.6% of image) - potential cluster box.
+- Image `DS003_00032` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00032_000_std.
+- Image `DS003_00034` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00034_000_std.
+- Image `DS003_00035` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00035_000_std.
+- Image `DS003_00036` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00036_000_std.
+- Image `DS003_00037` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00037_000_std.
+- Image `DS003_00039` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00039_000_std.
+- Image `DS003_00041` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00041_000_std.
+- Image `DS003_00048` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00048_001_std.; Elongated box detected in ANN_DS003_00048_001_std (aspect: 18.67).
+- Image `DS003_00051` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00051_000_std.; Elongated box detected in ANN_DS003_00051_000_std (aspect: 6.13).; Box boundaries exceed frame edge in ANN_DS003_00051_001_std.; Box boundaries exceed frame edge in ANN_DS003_00051_002_std.
+- Image `DS003_00052` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00052_000_std (covers 87.9% of image) - potential cluster box.
+- Image `DS003_00054` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00054_000_std.
+- Image `DS003_00060` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00060_000_std.; Elongated box detected in ANN_DS003_00060_000_std (aspect: 27.21).
+- Image `DS003_00061` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00061_000_std.
+- Image `DS003_00063` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00063_000_std.
+- Image `DS003_00064` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00064_000_std.
+- Image `DS003_00068` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00068_000_std.
+- Image `DS003_00070` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00070_001_std.; Box boundaries exceed frame edge in ANN_DS003_00070_002_std.; Box boundaries exceed frame edge in ANN_DS003_00070_003_std.
+- Image `DS003_00078` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00078_000_std.; Elongated box detected in ANN_DS003_00078_000_std (aspect: 17.20).
+- Image `DS003_00083` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00083_000_std.
+- Image `DS003_00085` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00085_000_std.; Elongated box detected in ANN_DS003_00085_000_std (aspect: 15.40).; Box boundaries exceed frame edge in ANN_DS003_00085_001_std.; Elongated box detected in ANN_DS003_00085_001_std (aspect: 7.05).
+- Image `DS003_00087` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00087_000_std (covers 82.6% of image) - potential cluster box.
+- Image `DS003_00090` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00090_000_std.
+- Image `DS003_00094` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00094_000_std (covers 84.5% of image) - potential cluster box.
+- Image `DS003_00095` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00095_000_std.
+- Image `DS003_00097` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00097_000_std (covers 84.3% of image) - potential cluster box.
+- Image `DS003_00099` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00099_000_std.
+- Image `DS003_00100` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00100_000_std.
+- Image `DS003_00101` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00101_000_std.
+- Image `DS003_00103` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00103_000_std.
+- Image `DS003_00105` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00105_000_std.; Elongated box detected in ANN_DS003_00105_000_std (aspect: 37.56).
+- Image `DS003_00106` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00106_000_std (covers 80.4% of image) - potential cluster box.
+- Image `DS003_00107` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00107_000_std.
+- Image `DS003_00109` [REJECTED]: Elongated box detected in ANN_DS003_00109_000_std (aspect: 12.29).; Box boundaries exceed frame edge in ANN_DS003_00109_001_std.
+- Image `DS003_00110` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00110_000_std.
+- Image `DS003_00111` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00111_002_std.; Box boundaries exceed frame edge in ANN_DS003_00111_003_std.; Elongated box detected in ANN_DS003_00111_003_std (aspect: 7.06).; Box boundaries exceed frame edge in ANN_DS003_00111_004_std.
+- Image `DS003_00113` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00113_000_std.
+- Image `DS003_00116` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00116_000_std.
+- Image `DS003_00118` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00118_000_std.
+- Image `DS003_00120` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00120_000_std.
+- Image `DS003_00121` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00121_000_std.
+- Image `DS003_00122` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00122_000_std.
+- Image `DS003_00124` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00124_000_std.
+- Image `DS003_00125` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00125_000_std.
+- Image `DS003_00126` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00126_000_std.
+- Image `DS003_00127` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00127_000_std.
+- Image `DS003_00128` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00128_000_std.
+- Image `DS003_00129` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00129_000_std.
+- Image `DS003_00130` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00130_000_std.
+- Image `DS003_00131` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00131_000_std.
+- Image `DS003_00132` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00132_000_std.
+- Image `DS003_00135` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00135_000_std.
+- Image `DS003_00136` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00136_000_std.
+- Image `DS003_00137` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00137_000_std.
+- Image `DS003_00139` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00139_000_std.
+- Image `DS003_00140` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00140_000_std.
+- Image `DS003_00141` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00141_000_std.
+- Image `DS003_00142` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00142_000_std.
+- Image `DS003_00143` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00143_000_std.
+- Image `DS003_00144` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00144_000_std.
+- Image `DS003_00145` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00145_000_std.
+- Image `DS003_00147` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00147_000_std.
+- Image `DS003_00148` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00148_000_std.
+- Image `DS003_00149` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00149_000_std.
+- Image `DS003_00150` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00150_000_std.
+- Image `DS003_00152` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00152_000_std.
+- Image `DS003_00153` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00153_000_std (covers 87.7% of image) - potential cluster box.
+- Image `DS003_00154` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00154_000_std.
+- Image `DS003_00156` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00156_000_std.
+- Image `DS003_00161` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00161_000_std (covers 90.6% of image) - potential cluster box.
+- Image `DS003_00162` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00162_000_std.; Elongated box detected in ANN_DS003_00162_000_std (aspect: 11.60).
+- Image `DS003_00163` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00163_000_std (covers 81.0% of image) - potential cluster box.
+- Image `DS003_00167` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00167_000_std.
+- Image `DS003_00169` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00169_000_std.
+- Image `DS003_00170` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00170_000_std.
+- Image `DS003_00171` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00171_000_std.
+- Image `DS003_00172` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00172_000_std.
+- Image `DS003_00173` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00173_000_std (covers 83.9% of image) - potential cluster box.
+- Image `DS003_00174` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00174_000_std.
+- Image `DS003_00175` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00175_000_std.
+- Image `DS003_00176` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00176_000_std (covers 92.2% of image) - potential cluster box.
+- Image `DS003_00184` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00184_000_std.
+- Image `DS003_00187` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00187_000_std.
+- Image `DS003_00189` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00189_000_std.
+- Image `DS003_00194` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00194_000_std (covers 92.6% of image) - potential cluster box.
+- Image `DS003_00197` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00197_000_std (covers 86.2% of image) - potential cluster box.
+- Image `DS003_00198` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00198_000_std.; Box boundaries exceed frame edge in ANN_DS003_00198_001_std.
+- Image `DS003_00201` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00201_000_std.
+- Image `DS003_00203` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00203_000_std (aspect: 8.84).
+- Image `DS003_00204` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00204_000_std.
+- Image `DS003_00206` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00206_000_std.
+- Image `DS003_00207` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00207_000_std.
+- Image `DS003_00208` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00208_000_std.
+- Image `DS003_00209` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00209_000_std (covers 83.5% of image) - potential cluster box.
+- Image `DS003_00212` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00212_000_std.
+- Image `DS003_00213` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00213_000_std.
+- Image `DS003_00214` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00214_000_std.
+- Image `DS003_00216` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00216_000_std.
+- Image `DS003_00220` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00220_000_std.
+- Image `DS003_00221` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00221_000_std.; Elongated box detected in ANN_DS003_00221_000_std (aspect: 5.36).
+- Image `DS003_00222` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00222_000_std (covers 83.0% of image) - potential cluster box.
+- Image `DS003_00224` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00224_000_std.
+- Image `DS003_00225` [REJECTED]: Elongated box detected in ANN_DS003_00225_000_std (aspect: 6.85).; Box boundaries exceed frame edge in ANN_DS003_00225_001_std.
+- Image `DS003_00226` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00226_000_std.; Elongated box detected in ANN_DS003_00226_000_std (aspect: 7.46).; Box boundaries exceed frame edge in ANN_DS003_00226_001_std.
+- Image `DS003_00227` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00227_002_std.; Box boundaries exceed frame edge in ANN_DS003_00227_003_std.; Elongated box detected in ANN_DS003_00227_003_std (aspect: 6.11).; Box boundaries exceed frame edge in ANN_DS003_00227_004_std.
+- Image `DS003_00228` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00228_000_std.; Box boundaries exceed frame edge in ANN_DS003_00228_001_std.; Elongated box detected in ANN_DS003_00228_002_std (aspect: 13.96).
+- Image `DS003_00229` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00229_002_std.
+- Image `DS003_00230` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00230_000_std.
+- Image `DS003_00231` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00231_000_std.
+- Image `DS003_00232` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00232_000_std.
+- Image `DS003_00233` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00233_000_std.
+- Image `DS003_00235` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00235_000_std.
+- Image `DS003_00236` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00236_000_std.
+- Image `DS003_00237` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00237_000_std.
+- Image `DS003_00238` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00238_000_std.
+- Image `DS003_00239` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00239_000_std.
+- Image `DS003_00240` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00240_000_std.
+- Image `DS003_00241` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00241_000_std.
+- Image `DS003_00242` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00242_000_std.; Giant box detected in ANN_DS003_00242_000_std (covers 90.1% of image) - potential cluster box.
+- Image `DS003_00243` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00243_000_std.
+- Image `DS003_00244` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00244_000_std.
+- Image `DS003_00245` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00245_000_std.
+- Image `DS003_00246` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00246_000_std.
+- Image `DS003_00247` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00247_000_std.
+- Image `DS003_00248` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00248_000_std.
+- Image `DS003_00249` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00249_000_std.
+- Image `DS003_00250` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00250_000_std.
+- Image `DS003_00251` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00251_000_std.
+- Image `DS003_00252` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00252_000_std.
+- Image `DS003_00253` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00253_000_std (aspect: 7.37).
+- Image `DS003_00254` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00254_000_std.
+- Image `DS003_00255` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00255_000_std.
+- Image `DS003_00256` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00256_000_std.
+- Image `DS003_00257` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00257_000_std.
+- Image `DS003_00258` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00258_000_std (aspect: 5.98).
+- Image `DS003_00259` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00259_000_std.
+- Image `DS003_00260` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00260_000_std.
+- Image `DS003_00261` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00261_000_std.
+- Image `DS003_00262` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00262_000_std.
+- Image `DS003_00263` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00263_000_std.
+- Image `DS003_00265` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00265_000_std.
+- Image `DS003_00266` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00266_000_std.
+- Image `DS003_00267` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00267_000_std.; Elongated box detected in ANN_DS003_00267_000_std (aspect: 5.29).
+- Image `DS003_00268` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00268_000_std.
+- Image `DS003_00269` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00269_000_std.
+- Image `DS003_00270` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00270_000_std.
+- Image `DS003_00271` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00271_000_std (aspect: 6.96).
+- Image `DS003_00272` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00272_000_std.
+- Image `DS003_00274` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00274_000_std.; Elongated box detected in ANN_DS003_00274_000_std (aspect: 76.82).
+- Image `DS003_00275` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00275_000_std.
+- Image `DS003_00276` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00276_000_std.
+- Image `DS003_00277` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00277_000_std.; Elongated box detected in ANN_DS003_00277_000_std (aspect: 32.45).
+- Image `DS003_00278` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00278_000_std.
+- Image `DS003_00279` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00279_000_std.; Giant box detected in ANN_DS003_00279_000_std (covers 95.0% of image) - potential cluster box.
+- Image `DS003_00280` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00280_000_std.
+- Image `DS003_00281` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00281_000_std.
+- Image `DS003_00282` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00282_000_std.; Giant box detected in ANN_DS003_00282_000_std (covers 81.0% of image) - potential cluster box.
+- Image `DS003_00283` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00283_000_std.; Box area (0.000067) below threshold (0.000100) in ANN_DS003_00283_000_std.
+- Image `DS003_00284` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00284_000_std.; Giant box detected in ANN_DS003_00284_000_std (covers 80.2% of image) - potential cluster box.
+- Image `DS003_00286` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00286_000_std.; Giant box detected in ANN_DS003_00286_000_std (covers 89.2% of image) - potential cluster box.
+- Image `DS003_00287` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00287_000_std.; Elongated box detected in ANN_DS003_00287_001_std (aspect: 5.53).
+- Image `DS003_00288` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00288_000_std.
+- Image `DS003_00293` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00293_000_std.
+- Image `DS003_00294` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00294_000_std.
+- Image `DS003_00296` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00296_001_std.; Elongated box detected in ANN_DS003_00296_001_std (aspect: 24.67).; Box boundaries exceed frame edge in ANN_DS003_00296_002_std.
+- Image `DS003_00297` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00297_000_std.; Giant box detected in ANN_DS003_00297_000_std (covers 97.6% of image) - potential cluster box.
+- Image `DS003_00298` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00298_000_std (aspect: 45.49).
+- Image `DS003_00299` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00299_000_std.; Elongated box detected in ANN_DS003_00299_000_std (aspect: 8.14).
+- Image `DS003_00300` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00300_000_std (aspect: 27.19).
+- Image `DS003_00301` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00301_000_std.
+- Image `DS003_00302` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00302_000_std.
+- Image `DS003_00304` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00304_000_std.; Giant box detected in ANN_DS003_00304_000_std (covers 87.9% of image) - potential cluster box.
+- Image `DS003_00305` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00305_000_std.
+- Image `DS003_00307` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00307_001_std.
+- Image `DS003_00309` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00309_000_std.
+- Image `DS003_00310` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00310_000_std.; Elongated box detected in ANN_DS003_00310_000_std (aspect: 7.18).
+- Image `DS003_00311` [REJECTED]: Box dimensions (0.91, 0.00) must be positive in ANN_DS003_00311_000_std.; Box boundaries exceed frame edge in ANN_DS003_00311_000_std.; Box area (0.000000) below threshold (0.000100) in ANN_DS003_00311_000_std.
+- Image `DS003_00312` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00312_000_std.
+- Image `DS003_00313` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00313_000_std.
+- Image `DS003_00314` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00314_000_std.
+- Image `DS003_00316` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00316_000_std.
+- Image `DS003_00317` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00317_000_std.; Elongated box detected in ANN_DS003_00317_000_std (aspect: 10.88).
+- Image `DS003_00318` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00318_000_std.
+- Image `DS003_00319` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00319_000_std.; Elongated box detected in ANN_DS003_00319_000_std (aspect: 27.43).; Box boundaries exceed frame edge in ANN_DS003_00319_001_std.
+- Image `DS003_00320` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00320_000_std.
+- Image `DS003_00321` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00321_000_std.
+- Image `DS003_00322` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00322_000_std.
+- Image `DS003_00323` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00323_000_std.
+- Image `DS003_00324` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00324_000_std.
+- Image `DS003_00325` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00325_000_std.; Elongated box detected in ANN_DS003_00325_000_std (aspect: 6.25).
+- Image `DS003_00326` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00326_000_std.
+- Image `DS003_00328` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00328_000_std.
+- Image `DS003_00329` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00329_000_std.
+- Image `DS003_00330` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00330_000_std.
+- Image `DS003_00331` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00331_000_std.; Elongated box detected in ANN_DS003_00331_000_std (aspect: 7.21).
+- Image `DS003_00332` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00332_000_std.
+- Image `DS003_00334` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00334_000_std.
+- Image `DS003_00335` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00335_000_std.
+- Image `DS003_00337` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00337_000_std.
+- Image `DS003_00338` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00338_000_std.
+- Image `DS003_00341` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00341_000_std.
+- Image `DS003_00342` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00342_000_std.
+- Image `DS003_00343` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00343_000_std.
+- Image `DS003_00344` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00344_000_std.
+- Image `DS003_00347` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00347_000_std.
+- Image `DS003_00348` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00348_000_std.
+- Image `DS003_00349` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00349_000_std.
+- Image `DS003_00350` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00350_000_std.
+- Image `DS003_00352` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00352_000_std.
+- Image `DS003_00354` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00354_000_std.; Elongated box detected in ANN_DS003_00354_000_std (aspect: 15.53).
+- Image `DS003_00355` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00355_000_std.
+- Image `DS003_00356` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00356_000_std.
+- Image `DS003_00357` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00357_000_std.; Elongated box detected in ANN_DS003_00357_000_std (aspect: 26.27).
+- Image `DS003_00358` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00358_000_std.
+- Image `DS003_00359` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00359_000_std.
+- Image `DS003_00360` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00360_000_std.; Giant box detected in ANN_DS003_00360_000_std (covers 98.1% of image) - potential cluster box.
+- Image `DS003_00361` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00361_000_std.
+- Image `DS003_00364` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00364_000_std.
+- Image `DS003_00365` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00365_000_std.
+- Image `DS003_00367` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00367_000_std.; Elongated box detected in ANN_DS003_00367_000_std (aspect: 6.11).
+- Image `DS003_00369` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00369_001_std.
+- Image `DS003_00371` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00371_000_std.
+- Image `DS003_00372` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00372_000_std.
+- Image `DS003_00375` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00375_001_std.
+- Image `DS003_00376` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00376_000_std.
+- Image `DS003_00377` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00377_000_std.
+- Image `DS003_00380` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00380_000_std.
+- Image `DS003_00381` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00381_000_std.
+- Image `DS003_00384` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00384_000_std.; Elongated box detected in ANN_DS003_00384_000_std (aspect: 10.53).
+- Image `DS003_00385` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00385_000_std.; Box boundaries exceed frame edge in ANN_DS003_00385_001_std.; Elongated box detected in ANN_DS003_00385_001_std (aspect: 5.12).
+- Image `DS003_00388` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00388_000_std.
+- Image `DS003_00390` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00390_000_std.
+- Image `DS003_00391` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00391_000_std.
+- Image `DS003_00393` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00393_000_std.
+- Image `DS003_00394` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00394_001_std.
+- Image `DS003_00397` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00397_000_std.
+- Image `DS003_00398` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00398_000_std.
+- Image `DS003_00399` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00399_000_std.; Elongated box detected in ANN_DS003_00399_000_std (aspect: 41.38).
+- Image `DS003_00401` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00401_000_std.
+- Image `DS003_00402` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00402_000_std.
+- Image `DS003_00406` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00406_000_std.
+- Image `DS003_00407` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00407_000_std.
+- Image `DS003_00412` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00412_000_std.
+- Image `DS003_00413` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00413_000_std.
+- Image `DS003_00416` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00416_000_std.
+- Image `DS003_00417` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00417_000_std.
+- Image `DS003_00418` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00418_000_std.
+- Image `DS003_00421` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00421_000_std.
+- Image `DS003_00423` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00423_000_std.
+- Image `DS003_00425` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00425_000_std.
+- Image `DS003_00427` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00427_000_std.
+- Image `DS003_00429` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00429_000_std.; Elongated box detected in ANN_DS003_00429_000_std (aspect: 475.76).
+- Image `DS003_00430` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00430_001_std.; Box boundaries exceed frame edge in ANN_DS003_00430_002_std.
+- Image `DS003_00432` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00432_002_std.; Box boundaries exceed frame edge in ANN_DS003_00432_003_std.
+- Image `DS003_00434` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00434_000_std.; Box boundaries exceed frame edge in ANN_DS003_00434_001_std.
+- Image `DS003_00436` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00436_000_std.
+- Image `DS003_00438` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00438_000_std.; Box boundaries exceed frame edge in ANN_DS003_00438_001_std.
+- Image `DS003_00439` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00439_002_std.
+- Image `DS003_00440` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00440_000_std.
+- Image `DS003_00442` [REJECTED]: Elongated box detected in ANN_DS003_00442_001_std (aspect: 8.00).; Box boundaries exceed frame edge in ANN_DS003_00442_002_std.
+- Image `DS003_00445` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00445_000_std.
+- Image `DS003_00448` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00448_000_std.
+- Image `DS003_00449` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00449_000_std.; Box boundaries exceed frame edge in ANN_DS003_00449_002_std.
+- Image `DS003_00451` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00451_000_std.
+- Image `DS003_00452` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00452_000_std.
+- Image `DS003_00454` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00454_000_std.
+- Image `DS003_00461` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00461_000_std.
+- Image `DS003_00463` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00463_000_std.; Box boundaries exceed frame edge in ANN_DS003_00463_001_std.
+- Image `DS003_00465` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00465_000_std.
+- Image `DS003_00469` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00469_000_std.; Elongated box detected in ANN_DS003_00469_000_std (aspect: 10.60).; Box boundaries exceed frame edge in ANN_DS003_00469_001_std.
+- Image `DS003_00470` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00470_000_std.; Box boundaries exceed frame edge in ANN_DS003_00470_001_std.
+- Image `DS003_00471` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00471_000_std.; Box boundaries exceed frame edge in ANN_DS003_00471_001_std.
+- Image `DS003_00475` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00475_001_std.; Box boundaries exceed frame edge in ANN_DS003_00475_002_std.
+- Image `DS003_00476` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00476_000_std.
+- Image `DS003_00478` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00478_000_std.
+- Image `DS003_00479` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00479_000_std.; Elongated box detected in ANN_DS003_00479_000_std (aspect: 10.36).; Box boundaries exceed frame edge in ANN_DS003_00479_001_std.
+- Image `DS003_00482` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00482_000_std.
+- Image `DS003_00485` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00485_002_std.; Elongated box detected in ANN_DS003_00485_002_std (aspect: 5.78).
+- Image `DS003_00487` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00487_001_std.
+- Image `DS003_00488` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00488_001_std.; Box boundaries exceed frame edge in ANN_DS003_00488_002_std.
+- Image `DS003_00492` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00492_000_std.; Box boundaries exceed frame edge in ANN_DS003_00492_001_std.; Box boundaries exceed frame edge in ANN_DS003_00492_003_std.
+- Image `DS003_00494` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00494_000_std.; Elongated box detected in ANN_DS003_00494_000_std (aspect: 8.24).
+- Image `DS003_00495` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00495_002_std.
+- Image `DS003_00499` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00499_000_std.
+- Image `DS003_00501` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00501_000_std.
+- Image `DS003_00502` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00502_000_std.
+- Image `DS003_00503` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00503_000_std.; Elongated box detected in ANN_DS003_00503_000_std (aspect: 9.40).
+- Image `DS003_00504` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00504_000_std.
+- Image `DS003_00505` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00505_000_std.
+- Image `DS003_00506` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00506_000_std.
+- Image `DS003_00508` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00508_000_std.
+- Image `DS003_00511` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00511_000_std.
+- Image `DS003_00512` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00512_001_std.
+- Image `DS003_00513` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00513_000_std.
+- Image `DS003_00515` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00515_000_std.
+- Image `DS003_00516` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00516_000_std.
+- Image `DS003_00523` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00523_000_std.
+- Image `DS003_00524` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00524_000_std (aspect: 10.53).
+- Image `DS003_00526` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00526_000_std.
+- Image `DS003_00527` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00527_000_std.
+- Image `DS003_00528` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00528_000_std.
+- Image `DS003_00530` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00530_000_std.
+- Image `DS003_00531` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00531_000_std.
+- Image `DS003_00533` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00533_000_std.; Elongated box detected in ANN_DS003_00533_000_std (aspect: 24.07).; Box boundaries exceed frame edge in ANN_DS003_00533_001_std.
+- Image `DS003_00534` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00534_000_std.
+- Image `DS003_00538` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00538_000_std.; Box boundaries exceed frame edge in ANN_DS003_00538_001_std.; Elongated box detected in ANN_DS003_00538_001_std (aspect: 27.22).
+- Image `DS003_00540` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00540_000_std.
+- Image `DS003_00541` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00541_000_std.; Elongated box detected in ANN_DS003_00541_000_std (aspect: 83.00).
+- Image `DS003_00542` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00542_000_std.
+- Image `DS003_00543` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00543_000_std.
+- Image `DS003_00544` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00544_000_std.
+- Image `DS003_00545` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00545_000_std.; Elongated box detected in ANN_DS003_00545_000_std (aspect: 6.11).; Box boundaries exceed frame edge in ANN_DS003_00545_001_std.; Elongated box detected in ANN_DS003_00545_001_std (aspect: 24.22).; Box boundaries exceed frame edge in ANN_DS003_00545_002_std.
+- Image `DS003_00546` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00546_000_std.; Elongated box detected in ANN_DS003_00546_000_std (aspect: 13.15).
+- Image `DS003_00547` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00547_000_std.; Elongated box detected in ANN_DS003_00547_000_std (aspect: 10.18).
+- Image `DS003_00548` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00548_000_std.
+- Image `DS003_00549` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00549_000_std.
+- Image `DS003_00552` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00552_000_std.
+- Image `DS003_00553` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00553_000_std.
+- Image `DS003_00554` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00554_000_std.
+- Image `DS003_00556` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00556_000_std.
+- Image `DS003_00559` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00559_000_std.
+- Image `DS003_00561` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00561_000_std.
+- Image `DS003_00563` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00563_000_std.
+- Image `DS003_00564` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00564_000_std.; Elongated box detected in ANN_DS003_00564_000_std (aspect: 10.62).
+- Image `DS003_00566` [REJECTED]: Box dimensions (0.66, 0.00) must be positive in ANN_DS003_00566_000_std.; Box boundaries exceed frame edge in ANN_DS003_00566_000_std.; Box area (0.000000) below threshold (0.000100) in ANN_DS003_00566_000_std.
+- Image `DS003_00567` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00567_000_std.; Elongated box detected in ANN_DS003_00567_000_std (aspect: 27.36).
+- Image `DS003_00569` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00569_000_std.
+- Image `DS003_00572` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00572_000_std.; Elongated box detected in ANN_DS003_00572_000_std (aspect: 6.50).; Box boundaries exceed frame edge in ANN_DS003_00572_001_std.; Elongated box detected in ANN_DS003_00572_001_std (aspect: 8.71).
+- Image `DS003_00575` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00575_000_std.
+- Image `DS003_00578` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00578_000_std.; Elongated box detected in ANN_DS003_00578_000_std (aspect: 28.57).; Box boundaries exceed frame edge in ANN_DS003_00578_001_std.
+- Image `DS003_00579` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00579_001_std.; Box boundaries exceed frame edge in ANN_DS003_00579_002_std.; Box boundaries exceed frame edge in ANN_DS003_00579_003_std.; Box boundaries exceed frame edge in ANN_DS003_00579_004_std.; Elongated box detected in ANN_DS003_00579_004_std (aspect: 14.98).
+- Image `DS003_00580` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00580_000_std.
+- Image `DS003_00582` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00582_000_std.
+- Image `DS003_00583` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00583_001_std.
+- Image `DS003_00586` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00586_000_std.
+- Image `DS003_00587` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00587_000_std.
+- Image `DS003_00588` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00588_000_std.
+- Image `DS003_00590` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00590_000_std.
+- Image `DS003_00593` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00593_000_std.
+- Image `DS003_00596` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00596_000_std.
+- Image `DS003_00609` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00609_001_std.
+- Image `DS003_00615` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00615_001_std.; Box boundaries exceed frame edge in ANN_DS003_00615_002_std.; Elongated box detected in ANN_DS003_00615_002_std (aspect: 18.20).
+- Image `DS003_00616` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00616_000_std.
+- Image `DS003_00622` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00622_002_std.; Box boundaries exceed frame edge in ANN_DS003_00622_003_std.
+- Image `DS003_00623` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00623_001_std.; Box boundaries exceed frame edge in ANN_DS003_00623_002_std.; Elongated box detected in ANN_DS003_00623_002_std (aspect: 7.95).; Box boundaries exceed frame edge in ANN_DS003_00623_003_std.; Box boundaries exceed frame edge in ANN_DS003_00623_004_std.; Elongated box detected in ANN_DS003_00623_005_std (aspect: 9.08).
+- Image `DS003_00624` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00624_000_std.
+- Image `DS003_00625` [REJECTED]: Elongated box detected in ANN_DS003_00625_000_std (aspect: 1151.21).; Box boundaries exceed frame edge in ANN_DS003_00625_001_std.; Box boundaries exceed frame edge in ANN_DS003_00625_002_std.; Box boundaries exceed frame edge in ANN_DS003_00625_003_std.; Box boundaries exceed frame edge in ANN_DS003_00625_004_std.
+- Image `DS003_00628` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00628_000_std.
+- Image `DS003_00629` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00629_000_std.
+- Image `DS003_00631` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00631_002_std.; Box boundaries exceed frame edge in ANN_DS003_00631_003_std.; Box boundaries exceed frame edge in ANN_DS003_00631_004_std.; Box boundaries exceed frame edge in ANN_DS003_00631_005_std.; Elongated box detected in ANN_DS003_00631_005_std (aspect: 5.06).
+- Image `DS003_00634` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00634_001_std.
+- Image `DS003_00635` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00635_000_std.; Elongated box detected in ANN_DS003_00635_000_std (aspect: 221.29).; Box boundaries exceed frame edge in ANN_DS003_00635_001_std.
+- Image `DS003_00637` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00637_001_std.; Box boundaries exceed frame edge in ANN_DS003_00637_002_std.; Elongated box detected in ANN_DS003_00637_002_std (aspect: 12.07).
+- Image `DS003_00638` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00638_000_std.
+- Image `DS003_00643` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00643_000_std.; Elongated box detected in ANN_DS003_00643_000_std (aspect: 7.91).
+- Image `DS003_00644` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00644_001_std.; Elongated box detected in ANN_DS003_00644_001_std (aspect: 5.48).; Box boundaries exceed frame edge in ANN_DS003_00644_002_std.; Box boundaries exceed frame edge in ANN_DS003_00644_003_std.
+- Image `DS003_00645` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00645_002_std.
+- Image `DS003_00648` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00648_000_std.; Box boundaries exceed frame edge in ANN_DS003_00648_001_std.; Box boundaries exceed frame edge in ANN_DS003_00648_002_std.; Box boundaries exceed frame edge in ANN_DS003_00648_003_std.
+- Image `DS003_00651` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00651_000_std.; Giant box detected in ANN_DS003_00651_000_std (covers 92.6% of image) - potential cluster box.; Elongated box detected in ANN_DS003_00651_001_std (aspect: 6.80).
+- Image `DS003_00653` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00653_000_std.; Elongated box detected in ANN_DS003_00653_000_std (aspect: 11.20).
+- Image `DS003_00654` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00654_000_std.
+- Image `DS003_00656` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00656_000_std (aspect: 98.83).
+- Image `DS003_00657` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00657_000_std.
+- Image `DS003_00661` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00661_000_std.; Elongated box detected in ANN_DS003_00661_000_std (aspect: 10.92).
+- Image `DS003_00662` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00662_000_std.; Elongated box detected in ANN_DS003_00662_000_std (aspect: 189.84).
+- Image `DS003_00663` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00663_000_std.
+- Image `DS003_00665` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00665_000_std.
+- Image `DS003_00666` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00666_000_std.
+- Image `DS003_00668` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00668_000_std.
+- Image `DS003_00670` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00670_000_std.
+- Image `DS003_00673` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00673_000_std.
+- Image `DS003_00676` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00676_000_std.; Box boundaries exceed frame edge in ANN_DS003_00676_002_std.
+- Image `DS003_00678` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00678_000_std.; Elongated box detected in ANN_DS003_00678_000_std (aspect: 5.52).
+- Image `DS003_00679` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00679_000_std.
+- Image `DS003_00680` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00680_000_std (aspect: 6.55).
+- Image `DS003_00684` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00684_000_std.; Elongated box detected in ANN_DS003_00684_000_std (aspect: 16.37).
+- Image `DS003_00685` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00685_000_std.
+- Image `DS003_00687` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00687_000_std.; Elongated box detected in ANN_DS003_00687_000_std (aspect: 10.13).
+- Image `DS003_00688` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00688_000_std.; Elongated box detected in ANN_DS003_00688_000_std (aspect: 37.00).
+- Image `DS003_00689` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00689_000_std.
+- Image `DS003_00690` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00690_000_std.
+- Image `DS003_00691` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00691_001_std.
+- Image `DS003_00692` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00692_000_std.; Elongated box detected in ANN_DS003_00692_000_std (aspect: 10.32).; Box boundaries exceed frame edge in ANN_DS003_00692_001_std.
+- Image `DS003_00693` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00693_000_std.
+- Image `DS003_00694` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00694_000_std (aspect: 9.39).
+- Image `DS003_00695` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00695_001_std.
+- Image `DS003_00696` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00696_000_std.
+- Image `DS003_00700` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00700_000_std.; Box boundaries exceed frame edge in ANN_DS003_00700_001_std.; Elongated box detected in ANN_DS003_00700_001_std (aspect: 5.44).; Box boundaries exceed frame edge in ANN_DS003_00700_002_std.; Elongated box detected in ANN_DS003_00700_002_std (aspect: 18.63).; Box boundaries exceed frame edge in ANN_DS003_00700_003_std.; Giant box detected in ANN_DS003_00700_003_std (covers 96.2% of image) - potential cluster box.
+- Image `DS003_00701` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00701_000_std.; Elongated box detected in ANN_DS003_00701_000_std (aspect: 12.57).
+- Image `DS003_00702` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_00702_000_std (aspect: 7.23).
+- Image `DS003_00703` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00703_000_std.
+- Image `DS003_00704` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00704_000_std.
+- Image `DS003_00705` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00705_000_std.
+- Image `DS003_00708` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00708_000_std.
+- Image `DS003_00710` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00710_001_std.
+- Image `DS003_00711` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00711_000_std.
+- Image `DS003_00712` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00712_000_std.
+- Image `DS003_00713` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00713_000_std.
+- Image `DS003_00716` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00716_000_std.; Box boundaries exceed frame edge in ANN_DS003_00716_002_std.
+- Image `DS003_00718` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00718_000_std.; Elongated box detected in ANN_DS003_00718_000_std (aspect: 5.79).
+- Image `DS003_00719` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00719_000_std.
+- Image `DS003_00720` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00720_000_std.
+- Image `DS003_00721` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00721_000_std.; Elongated box detected in ANN_DS003_00721_000_std (aspect: 7.91).
+- Image `DS003_00727` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00727_002_std.
+- Image `DS003_00730` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00730_000_std.; Elongated box detected in ANN_DS003_00730_000_std (aspect: 6.05).
+- Image `DS003_00731` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00731_000_std.
+- Image `DS003_00732` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00732_000_std.
+- Image `DS003_00733` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00733_002_std.
+- Image `DS003_00734` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00734_000_std.; Elongated box detected in ANN_DS003_00734_000_std (aspect: 21.22).
+- Image `DS003_00735` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00735_000_std.
+- Image `DS003_00737` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00737_000_std.
+- Image `DS003_00741` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00741_000_std.
+- Image `DS003_00742` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00742_000_std.
+- Image `DS003_00743` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00743_000_std.
+- Image `DS003_00744` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00744_000_std.
+- Image `DS003_00745` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00745_000_std.
+- Image `DS003_00749` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00749_000_std (covers 81.0% of image) - potential cluster box.
+- Image `DS003_00750` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00750_000_std (covers 84.8% of image) - potential cluster box.
+- Image `DS003_00753` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00753_000_std (covers 81.0% of image) - potential cluster box.
+- Image `DS003_00755` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00755_000_std (covers 85.4% of image) - potential cluster box.
+- Image `DS003_00758` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00758_000_std (covers 80.7% of image) - potential cluster box.
+- Image `DS003_00759` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00759_000_std (covers 87.5% of image) - potential cluster box.
+- Image `DS003_00763` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00763_000_std (covers 88.9% of image) - potential cluster box.
+- Image `DS003_00766` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00766_000_std (covers 82.9% of image) - potential cluster box.
+- Image `DS003_00772` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00772_000_std (covers 91.6% of image) - potential cluster box.
+- Image `DS003_00779` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00779_000_std (covers 84.3% of image) - potential cluster box.
+- Image `DS003_00790` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00790_000_std.
+- Image `DS003_00792` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00792_000_std.
+- Image `DS003_00793` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00793_000_std (covers 87.3% of image) - potential cluster box.
+- Image `DS003_00795` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00795_000_std.; Giant box detected in ANN_DS003_00795_000_std (covers 92.0% of image) - potential cluster box.
+- Image `DS003_00796` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00796_000_std (covers 82.8% of image) - potential cluster box.
+- Image `DS003_00797` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00797_000_std.
+- Image `DS003_00799` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00799_000_std.; Elongated box detected in ANN_DS003_00799_000_std (aspect: 5.65).
+- Image `DS003_00800` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00800_000_std (covers 83.2% of image) - potential cluster box.
+- Image `DS003_00801` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00801_000_std.; Elongated box detected in ANN_DS003_00801_000_std (aspect: 21.44).
+- Image `DS003_00803` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00803_000_std (covers 81.1% of image) - potential cluster box.
+- Image `DS003_00804` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00804_000_std.
+- Image `DS003_00805` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00805_000_std.
+- Image `DS003_00809` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00809_000_std.
+- Image `DS003_00810` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00810_000_std.; Elongated box detected in ANN_DS003_00810_000_std (aspect: 20.05).
+- Image `DS003_00811` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00811_000_std.; Elongated box detected in ANN_DS003_00811_000_std (aspect: 40.39).
+- Image `DS003_00812` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00812_000_std (covers 88.6% of image) - potential cluster box.
+- Image `DS003_00813` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00813_000_std.; Elongated box detected in ANN_DS003_00813_000_std (aspect: 25.45).
+- Image `DS003_00814` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00814_000_std.
+- Image `DS003_00816` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00816_000_std.
+- Image `DS003_00818` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00818_000_std.
+- Image `DS003_00819` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00819_000_std.
+- Image `DS003_00820` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00820_000_std (covers 85.7% of image) - potential cluster box.
+- Image `DS003_00822` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00822_000_std.
+- Image `DS003_00824` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00824_000_std.
+- Image `DS003_00826` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00826_000_std.
+- Image `DS003_00829` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00829_000_std.; Giant box detected in ANN_DS003_00829_000_std (covers 89.0% of image) - potential cluster box.
+- Image `DS003_00831` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00831_000_std.; Giant box detected in ANN_DS003_00831_000_std (covers 83.8% of image) - potential cluster box.
+- Image `DS003_00833` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00833_000_std.
+- Image `DS003_00836` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00836_000_std.
+- Image `DS003_00837` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00837_000_std.
+- Image `DS003_00838` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00838_000_std (covers 90.2% of image) - potential cluster box.
+- Image `DS003_00842` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00842_000_std.
+- Image `DS003_00844` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00844_000_std.
+- Image `DS003_00845` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00845_000_std.
+- Image `DS003_00848` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00848_000_std.
+- Image `DS003_00849` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00849_000_std.
+- Image `DS003_00851` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00851_000_std.
+- Image `DS003_00857` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00857_000_std (covers 93.1% of image) - potential cluster box.
+- Image `DS003_00862` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00862_000_std.
+- Image `DS003_00863` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00863_001_std.
+- Image `DS003_00864` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00864_000_std.
+- Image `DS003_00866` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00866_000_std.
+- Image `DS003_00867` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00867_000_std.
+- Image `DS003_00868` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00868_000_std.
+- Image `DS003_00870` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00870_000_std.
+- Image `DS003_00873` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00873_000_std.
+- Image `DS003_00874` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00874_000_std.
+- Image `DS003_00875` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00875_000_std.
+- Image `DS003_00876` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00876_000_std.
+- Image `DS003_00877` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00877_000_std.
+- Image `DS003_00878` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00878_000_std.; Elongated box detected in ANN_DS003_00878_000_std (aspect: 39.05).
+- Image `DS003_00879` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00879_000_std.
+- Image `DS003_00880` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00880_000_std.
+- Image `DS003_00882` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00882_000_std.
+- Image `DS003_00883` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00883_000_std.; Giant box detected in ANN_DS003_00883_000_std (covers 85.9% of image) - potential cluster box.
+- Image `DS003_00886` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00886_000_std.
+- Image `DS003_00887` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00887_000_std.; Elongated box detected in ANN_DS003_00887_000_std (aspect: 6.51).
+- Image `DS003_00888` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00888_000_std.
+- Image `DS003_00890` [REJECTED]: Elongated box detected in ANN_DS003_00890_000_std (aspect: 5.11).; Box boundaries exceed frame edge in ANN_DS003_00890_001_std.; Elongated box detected in ANN_DS003_00890_001_std (aspect: 5.32).
+- Image `DS003_00891` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00891_000_std.
+- Image `DS003_00892` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00892_000_std.; Box boundaries exceed frame edge in ANN_DS003_00892_001_std.
+- Image `DS003_00893` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00893_000_std.; Box boundaries exceed frame edge in ANN_DS003_00893_001_std.; Box boundaries exceed frame edge in ANN_DS003_00893_002_std.
+- Image `DS003_00894` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00894_002_std.
+- Image `DS003_00895` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00895_003_std.; Box boundaries exceed frame edge in ANN_DS003_00895_004_std.
+- Image `DS003_00896` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00896_000_std.
+- Image `DS003_00897` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00897_001_std.; Box boundaries exceed frame edge in ANN_DS003_00897_002_std.; Box boundaries exceed frame edge in ANN_DS003_00897_003_std.
+- Image `DS003_00900` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00900_000_std.; Elongated box detected in ANN_DS003_00900_002_std (aspect: 21.39).
+- Image `DS003_00901` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00901_000_std.
+- Image `DS003_00903` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00903_000_std.
+- Image `DS003_00904` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00904_000_std.
+- Image `DS003_00906` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00906_001_std.
+- Image `DS003_00908` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00908_000_std.
+- Image `DS003_00909` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00909_000_std.
+- Image `DS003_00910` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00910_000_std.
+- Image `DS003_00911` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00911_000_std.
+- Image `DS003_00913` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00913_000_std.
+- Image `DS003_00914` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00914_000_std.
+- Image `DS003_00916` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00916_000_std.
+- Image `DS003_00917` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00917_000_std.
+- Image `DS003_00918` [REVIEW QUEUE]: Giant box detected in ANN_DS003_00918_000_std (covers 92.0% of image) - potential cluster box.
+- Image `DS003_00919` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00919_000_std.
+- Image `DS003_00920` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00920_000_std.; Box boundaries exceed frame edge in ANN_DS003_00920_001_std.
+- Image `DS003_00921` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00921_000_std.
+- Image `DS003_00922` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00922_000_std.; Giant box detected in ANN_DS003_00922_000_std (covers 94.2% of image) - potential cluster box.
+- Image `DS003_00924` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00924_000_std.
+- Image `DS003_00928` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00928_000_std.
+- Image `DS003_00934` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00934_000_std.
+- Image `DS003_00935` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00935_000_std.
+- Image `DS003_00937` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00937_000_std.
+- Image `DS003_00938` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00938_000_std.
+- Image `DS003_00939` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00939_000_std.; Elongated box detected in ANN_DS003_00939_000_std (aspect: 5.85).
+- Image `DS003_00940` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00940_000_std.
+- Image `DS003_00941` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00941_000_std.
+- Image `DS003_00942` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00942_000_std.
+- Image `DS003_00943` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00943_000_std.
+- Image `DS003_00944` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00944_000_std.
+- Image `DS003_00945` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00945_000_std.; Giant box detected in ANN_DS003_00945_000_std (covers 84.5% of image) - potential cluster box.
+- Image `DS003_00946` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00946_000_std.
+- Image `DS003_00947` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00947_000_std.
+- Image `DS003_00949` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00949_000_std.; Giant box detected in ANN_DS003_00949_000_std (covers 93.9% of image) - potential cluster box.
+- Image `DS003_00950` [REJECTED]: Box dimensions (0.00, 0.72) must be positive in ANN_DS003_00950_000_std.; Box area (0.000000) below threshold (0.000100) in ANN_DS003_00950_000_std.
+- Image `DS003_00952` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00952_000_std.
+- Image `DS003_00954` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00954_000_std.
+- Image `DS003_00955` [REJECTED]: Elongated box detected in ANN_DS003_00955_000_std (aspect: 5.79).; Box boundaries exceed frame edge in ANN_DS003_00955_001_std.
+- Image `DS003_00956` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00956_000_std.; Giant box detected in ANN_DS003_00956_000_std (covers 89.1% of image) - potential cluster box.
+- Image `DS003_00957` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00957_000_std.
+- Image `DS003_00959` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00959_001_std.; Box boundaries exceed frame edge in ANN_DS003_00959_002_std.
+- Image `DS003_00960` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00960_000_std.
+- Image `DS003_00961` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00961_000_std.
+- Image `DS003_00962` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00962_000_std.
+- Image `DS003_00963` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00963_000_std.
+- Image `DS003_00964` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00964_000_std.
+- Image `DS003_00965` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00965_000_std.
+- Image `DS003_00966` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00966_000_std.
+- Image `DS003_00967` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00967_000_std.
+- Image `DS003_00968` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00968_000_std.
+- Image `DS003_00969` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00969_000_std.
+- Image `DS003_00972` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00972_000_std.
+- Image `DS003_00973` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00973_000_std.
+- Image `DS003_00974` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00974_000_std.
+- Image `DS003_00975` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00975_000_std.
+- Image `DS003_00980` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00980_000_std.
+- Image `DS003_00984` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00984_000_std.
+- Image `DS003_00985` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00985_000_std.
+- Image `DS003_00986` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00986_000_std.
+- Image `DS003_00987` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00987_000_std.
+- Image `DS003_00991` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00991_000_std.
+- Image `DS003_00995` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00995_000_std.
+- Image `DS003_00999` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_00999_000_std.; Box boundaries exceed frame edge in ANN_DS003_00999_001_std.; Elongated box detected in ANN_DS003_00999_001_std (aspect: 7.25).
+- Image `DS003_01000` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01000_000_std.; Box boundaries exceed frame edge in ANN_DS003_01000_002_std.
+- Image `DS003_01002` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01002_000_std.
+- Image `DS003_01004` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01004_000_std.
+- Image `DS003_01010` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01010_000_std.
+- Image `DS003_01013` [REJECTED]: Elongated box detected in ANN_DS003_01013_000_std (aspect: 14.85).; Box boundaries exceed frame edge in ANN_DS003_01013_002_std.
+- Image `DS003_01015` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01015_000_std.; Elongated box detected in ANN_DS003_01015_001_std (aspect: 7.55).
+- Image `DS003_01016` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01016_000_std.
+- Image `DS003_01018` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01018_000_std.
+- Image `DS003_01021` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01021_000_std.
+- Image `DS003_01022` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01022_000_std.
+- Image `DS003_01023` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01023_000_std.
+- Image `DS003_01031` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01031_000_std.
+- Image `DS003_01032` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01032_000_std.
+- Image `DS003_01034` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01034_000_std.; Elongated box detected in ANN_DS003_01034_000_std (aspect: 33.45).
+- Image `DS003_01036` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01036_000_std.
+- Image `DS003_01039` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_01039_000_std (aspect: 6.93).
+- Image `DS003_01040` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01040_000_std.
+- Image `DS003_01042` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01042_000_std.; Elongated box detected in ANN_DS003_01042_000_std (aspect: 26.58).
+- Image `DS003_01043` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01043_000_std.
+- Image `DS003_01045` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01045_000_std.; Elongated box detected in ANN_DS003_01045_000_std (aspect: 8.34).
+- Image `DS003_01046` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01046_000_std.; Box boundaries exceed frame edge in ANN_DS003_01046_001_std.
+- Image `DS003_01050` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01050_000_std.; Elongated box detected in ANN_DS003_01050_001_std (aspect: 36.83).; Box boundaries exceed frame edge in ANN_DS003_01050_002_std.
+- Image `DS003_01054` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01054_001_std.; Box boundaries exceed frame edge in ANN_DS003_01054_003_std.
+- Image `DS003_01055` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01055_000_std.
+- Image `DS003_01057` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01057_001_std.
+- Image `DS003_01058` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01058_000_std.
+- Image `DS003_01060` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01060_001_std.
+- Image `DS003_01062` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01062_000_std.
+- Image `DS003_01063` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01063_000_std.
+- Image `DS003_01066` [REVIEW QUEUE]: Elongated box detected in ANN_DS003_01066_000_std (aspect: 13.62).
+- Image `DS003_01067` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01067_000_std.; Elongated box detected in ANN_DS003_01067_000_std (aspect: 32.58).
+- Image `DS003_01068` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01068_000_std.
+- Image `DS003_01069` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01069_000_std.
+- Image `DS003_01070` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01070_000_std.
+- Image `DS003_01071` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01071_000_std.
+- Image `DS003_01074` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01074_000_std.
+- Image `DS003_01077` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01077_002_std.; Elongated box detected in ANN_DS003_01077_002_std (aspect: 8.86).
+- Image `DS003_01078` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01078_002_std.; Box boundaries exceed frame edge in ANN_DS003_01078_003_std.
+- Image `DS003_01081` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01081_000_std.; Elongated box detected in ANN_DS003_01081_000_std (aspect: 5.89).
+- Image `DS003_01083` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01083_000_std.
+- Image `DS003_01085` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01085_000_std.
+- Image `DS003_01093` [REVIEW QUEUE]: Giant box detected in ANN_DS003_01093_000_std (covers 81.8% of image) - potential cluster box.
+- Image `DS003_01099` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01099_000_std.
+- Image `DS003_01100` [REVIEW QUEUE]: Giant box detected in ANN_DS003_01100_000_std (covers 85.9% of image) - potential cluster box.
+- Image `DS003_01101` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01101_000_std.; Elongated box detected in ANN_DS003_01101_000_std (aspect: 49.85).
+- Image `DS003_01102` [REVIEW QUEUE]: Giant box detected in ANN_DS003_01102_000_std (covers 90.6% of image) - potential cluster box.
+- Image `DS003_01103` [REVIEW QUEUE]: Giant box detected in ANN_DS003_01103_000_std (covers 85.6% of image) - potential cluster box.
+- Image `DS003_01104` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01104_000_std.
+- Image `DS003_01106` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01106_000_std.; Giant box detected in ANN_DS003_01106_000_std (covers 84.3% of image) - potential cluster box.
+- Image `DS003_01109` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01109_000_std.; Giant box detected in ANN_DS003_01109_000_std (covers 89.9% of image) - potential cluster box.
+- Image `DS003_01110` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01110_000_std.
+- Image `DS003_01111` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01111_000_std.
+- Image `DS003_01113` [REVIEW QUEUE]: Giant box detected in ANN_DS003_01113_000_std (covers 82.3% of image) - potential cluster box.
+- Image `DS003_01114` [REVIEW QUEUE]: Giant box detected in ANN_DS003_01114_000_std (covers 87.8% of image) - potential cluster box.
+- Image `DS003_01116` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01116_000_std.
+- Image `DS003_01117` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01117_000_std.; Giant box detected in ANN_DS003_01117_000_std (covers 88.5% of image) - potential cluster box.
+- Image `DS003_01118` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01118_000_std.
+- Image `DS003_01120` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01120_000_std.
+- Image `DS003_01121` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01121_000_std.
+- Image `DS003_01122` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01122_000_std.
+- Image `DS003_01123` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01123_000_std.
+- Image `DS003_01124` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01124_000_std.
+- Image `DS003_01125` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01125_000_std.
+- Image `DS003_01126` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01126_001_std.
+- Image `DS003_01129` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01129_000_std.
+- Image `DS003_01130` [REJECTED]: Box boundaries exceed frame edge in ANN_DS003_01130_000_std.

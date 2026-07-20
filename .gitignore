@@ -1,0 +1,44 @@
+# Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / Editor Settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Datasets (contain raw/external/standardized/curated image and text files)
+workspace/datasets/
+
+# Database Index files
+workspace/database/
+*.sqlite
+*.db
+
+# Ignore nested workspaces
+workspace/workspace/
+
+# Logs and generated diagnostics
+workspace/reports/**/*.log
+workspace/reports/*.log
+*.log
+
+# Large CSVs in reports
+workspace/reports/**/*.csv
+workspace/reports/*.csv
+
+# Ignore all image files globally (since images are stored in datasets or reports/previews)
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Virtual environments
+venv/
+.venv/
+env/

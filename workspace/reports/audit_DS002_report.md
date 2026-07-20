@@ -1,0 +1,854 @@
+# Annotation Sanity Audit: DS002
+
+*Generated on: 2026-06-28 18:55:43*
+
+## Executive Summary
+Sanity checks on box dimensions and overlaps.
+
+## Audit Verification Breakdown
+- **Total Images Checked**: 4409
+- **Clean (Passed Annotations)**: 3570
+- **Logical Rejections**: 74
+- **Flagged for Review (Overlaps/Elongated/Giant)**: 765
+
+
+## Failed/Flagged Annotations Audit Log
+- Image `DS002_00001` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00016` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00016_000_std.
+- Image `DS002_00019` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00019_001_std.; Box boundaries exceed frame edge in ANN_DS002_00019_002_std.
+- Image `DS002_00020` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00020_001_std.
+- Image `DS002_00022` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00022_002_std.
+- Image `DS002_00023` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00023_002_std.
+- Image `DS002_00043` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_00043_003_std (aspect: 5.24).
+- Image `DS002_00113` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_00113_008_std (aspect: 5.72).
+- Image `DS002_00243` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_00243_017_std (aspect: 9.36).
+- Image `DS002_00244` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_00244_017_std (aspect: 9.95).
+- Image `DS002_00310` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_00310_009_std (aspect: 29.62).
+- Image `DS002_00349` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_00349_021_std (aspect: 5.05).
+- Image `DS002_00480` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00480_001_std.; Elongated box detected in ANN_DS002_00480_002_std (aspect: 5.38).; Box boundaries exceed frame edge in ANN_DS002_00480_003_std.; Elongated box detected in ANN_DS002_00480_003_std (aspect: 58.13).; Box boundaries exceed frame edge in ANN_DS002_00480_004_std.; Box boundaries exceed frame edge in ANN_DS002_00480_005_std.; Box boundaries exceed frame edge in ANN_DS002_00480_006_std.; Elongated box detected in ANN_DS002_00480_017_std (aspect: 5.76).; Box boundaries exceed frame edge in ANN_DS002_00480_020_std.; Elongated box detected in ANN_DS002_00480_020_std (aspect: 3457.89).; Box boundaries exceed frame edge in ANN_DS002_00480_021_std.; Box boundaries exceed frame edge in ANN_DS002_00480_022_std.; Box boundaries exceed frame edge in ANN_DS002_00480_024_std.; Box boundaries exceed frame edge in ANN_DS002_00480_025_std.; Box boundaries exceed frame edge in ANN_DS002_00480_027_std.
+- Image `DS002_00481` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00481_005_std.; Box boundaries exceed frame edge in ANN_DS002_00481_006_std.; Box boundaries exceed frame edge in ANN_DS002_00481_020_std.; Giant box detected in ANN_DS002_00481_020_std (covers 93.4% of image) - potential cluster box.; Elongated box detected in ANN_DS002_00481_023_std (aspect: 6.67).; Box boundaries exceed frame edge in ANN_DS002_00481_024_std.
+- Image `DS002_00482` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00482_003_std.; Elongated box detected in ANN_DS002_00482_003_std (aspect: 8.08).; Box boundaries exceed frame edge in ANN_DS002_00482_004_std.; Box boundaries exceed frame edge in ANN_DS002_00482_005_std.; Box boundaries exceed frame edge in ANN_DS002_00482_006_std.; Box boundaries exceed frame edge in ANN_DS002_00482_020_std.; Elongated box detected in ANN_DS002_00482_020_std (aspect: 80.10).; Box boundaries exceed frame edge in ANN_DS002_00482_021_std.; Box boundaries exceed frame edge in ANN_DS002_00482_022_std.; Box boundaries exceed frame edge in ANN_DS002_00482_024_std.; Box boundaries exceed frame edge in ANN_DS002_00482_025_std.; Box boundaries exceed frame edge in ANN_DS002_00482_027_std.; Box boundaries exceed frame edge in ANN_DS002_00482_028_std.
+- Image `DS002_00483` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00483_000_std.
+- Image `DS002_00484` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00484_000_std.
+- Image `DS002_00485` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00485_001_std.; Box boundaries exceed frame edge in ANN_DS002_00485_002_std.
+- Image `DS002_00489` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00489_000_std.; Box boundaries exceed frame edge in ANN_DS002_00489_002_std.; Elongated box detected in ANN_DS002_00489_002_std (aspect: 5.54).; Box boundaries exceed frame edge in ANN_DS002_00489_004_std.; Box boundaries exceed frame edge in ANN_DS002_00489_005_std.; Box boundaries exceed frame edge in ANN_DS002_00489_006_std.; Elongated box detected in ANN_DS002_00489_006_std (aspect: 40.16).
+- Image `DS002_00490` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00490_001_std.; Box boundaries exceed frame edge in ANN_DS002_00490_002_std.; Giant box detected in ANN_DS002_00490_002_std (covers 80.7% of image) - potential cluster box.; Box boundaries exceed frame edge in ANN_DS002_00490_004_std.; Box boundaries exceed frame edge in ANN_DS002_00490_005_std.; Elongated box detected in ANN_DS002_00490_005_std (aspect: 5.78).; Box boundaries exceed frame edge in ANN_DS002_00490_006_std.; Elongated box detected in ANN_DS002_00490_006_std (aspect: 45.70).
+- Image `DS002_00491` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00491_000_std.; Box boundaries exceed frame edge in ANN_DS002_00491_006_std.; Elongated box detected in ANN_DS002_00491_007_std (aspect: 10.49).
+- Image `DS002_00492` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00492_002_std.; Box boundaries exceed frame edge in ANN_DS002_00492_003_std.; Box boundaries exceed frame edge in ANN_DS002_00492_006_std.; Elongated box detected in ANN_DS002_00492_006_std (aspect: 5.86).; Box boundaries exceed frame edge in ANN_DS002_00492_007_std.; Box boundaries exceed frame edge in ANN_DS002_00492_009_std.; Box boundaries exceed frame edge in ANN_DS002_00492_010_std.
+- Image `DS002_00493` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00493_000_std.; Box boundaries exceed frame edge in ANN_DS002_00493_002_std.
+- Image `DS002_00494` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00494_002_std.; Elongated box detected in ANN_DS002_00494_002_std (aspect: 57.29).; Box boundaries exceed frame edge in ANN_DS002_00494_003_std.
+- Image `DS002_00497` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00497_000_std.; Elongated box detected in ANN_DS002_00497_000_std (aspect: 82.17).; Box boundaries exceed frame edge in ANN_DS002_00497_001_std.; Elongated box detected in ANN_DS002_00497_001_std (aspect: 5.31).; Box boundaries exceed frame edge in ANN_DS002_00497_002_std.; Elongated box detected in ANN_DS002_00497_002_std (aspect: 20.17).; Box boundaries exceed frame edge in ANN_DS002_00497_003_std.; Box boundaries exceed frame edge in ANN_DS002_00497_004_std.; Box boundaries exceed frame edge in ANN_DS002_00497_005_std.; Giant box detected in ANN_DS002_00497_005_std (covers 81.2% of image) - potential cluster box.; Box boundaries exceed frame edge in ANN_DS002_00497_007_std.; Elongated box detected in ANN_DS002_00497_007_std (aspect: 180.56).; Box boundaries exceed frame edge in ANN_DS002_00497_008_std.; Elongated box detected in ANN_DS002_00497_008_std (aspect: 61.45).; Elongated box detected in ANN_DS002_00497_009_std (aspect: 7.04).; Box boundaries exceed frame edge in ANN_DS002_00497_011_std.; Elongated box detected in ANN_DS002_00497_012_std (aspect: 12.24).; Box boundaries exceed frame edge in ANN_DS002_00497_013_std.; Box boundaries exceed frame edge in ANN_DS002_00497_014_std.; Box boundaries exceed frame edge in ANN_DS002_00497_015_std.; Box boundaries exceed frame edge in ANN_DS002_00497_016_std.; Box boundaries exceed frame edge in ANN_DS002_00497_017_std.; Box boundaries exceed frame edge in ANN_DS002_00497_019_std.; Box boundaries exceed frame edge in ANN_DS002_00497_021_std.; Box boundaries exceed frame edge in ANN_DS002_00497_022_std.; Box boundaries exceed frame edge in ANN_DS002_00497_024_std.; Box boundaries exceed frame edge in ANN_DS002_00497_027_std.; Box boundaries exceed frame edge in ANN_DS002_00497_028_std.; Elongated box detected in ANN_DS002_00497_029_std (aspect: 5.27).; Box boundaries exceed frame edge in ANN_DS002_00497_032_std.; Elongated box detected in ANN_DS002_00497_032_std (aspect: 9.74).
+- Image `DS002_00498` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00498_000_std.; Elongated box detected in ANN_DS002_00498_000_std (aspect: 158.00).; Box boundaries exceed frame edge in ANN_DS002_00498_001_std.; Elongated box detected in ANN_DS002_00498_001_std (aspect: 5.51).; Box boundaries exceed frame edge in ANN_DS002_00498_002_std.; Elongated box detected in ANN_DS002_00498_002_std (aspect: 22.90).; Box boundaries exceed frame edge in ANN_DS002_00498_003_std.; Box boundaries exceed frame edge in ANN_DS002_00498_004_std.; Box boundaries exceed frame edge in ANN_DS002_00498_005_std.; Giant box detected in ANN_DS002_00498_005_std (covers 82.3% of image) - potential cluster box.; Box boundaries exceed frame edge in ANN_DS002_00498_007_std.; Elongated box detected in ANN_DS002_00498_007_std (aspect: 34.66).; Box boundaries exceed frame edge in ANN_DS002_00498_008_std.; Elongated box detected in ANN_DS002_00498_008_std (aspect: 95.91).; Elongated box detected in ANN_DS002_00498_009_std (aspect: 6.26).; Box boundaries exceed frame edge in ANN_DS002_00498_011_std.; Elongated box detected in ANN_DS002_00498_012_std (aspect: 10.07).; Box boundaries exceed frame edge in ANN_DS002_00498_013_std.; Box boundaries exceed frame edge in ANN_DS002_00498_014_std.; Box boundaries exceed frame edge in ANN_DS002_00498_015_std.; Box boundaries exceed frame edge in ANN_DS002_00498_016_std.; Box boundaries exceed frame edge in ANN_DS002_00498_017_std.; Elongated box detected in ANN_DS002_00498_018_std (aspect: 5.09).; Box boundaries exceed frame edge in ANN_DS002_00498_019_std.; Box boundaries exceed frame edge in ANN_DS002_00498_021_std.; Box boundaries exceed frame edge in ANN_DS002_00498_022_std.; Box boundaries exceed frame edge in ANN_DS002_00498_024_std.; Box boundaries exceed frame edge in ANN_DS002_00498_027_std.; Box boundaries exceed frame edge in ANN_DS002_00498_028_std.; Elongated box detected in ANN_DS002_00498_029_std (aspect: 5.46).; Box boundaries exceed frame edge in ANN_DS002_00498_032_std.; Elongated box detected in ANN_DS002_00498_032_std (aspect: 10.35).
+- Image `DS002_00499` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00499_003_std.; Elongated box detected in ANN_DS002_00499_003_std (aspect: 7.18).; Box boundaries exceed frame edge in ANN_DS002_00499_004_std.; Elongated box detected in ANN_DS002_00499_004_std (aspect: 24.98).; Box boundaries exceed frame edge in ANN_DS002_00499_005_std.; Elongated box detected in ANN_DS002_00499_005_std (aspect: 13.75).; Box boundaries exceed frame edge in ANN_DS002_00499_006_std.; Elongated box detected in ANN_DS002_00499_007_std (aspect: 15.52).; Elongated box detected in ANN_DS002_00499_008_std (aspect: 11.42).; Box boundaries exceed frame edge in ANN_DS002_00499_009_std.; Box boundaries exceed frame edge in ANN_DS002_00499_012_std.; Box boundaries exceed frame edge in ANN_DS002_00499_013_std.; Box boundaries exceed frame edge in ANN_DS002_00499_014_std.; Box boundaries exceed frame edge in ANN_DS002_00499_016_std.; Box boundaries exceed frame edge in ANN_DS002_00499_017_std.; Box boundaries exceed frame edge in ANN_DS002_00499_020_std.; Box boundaries exceed frame edge in ANN_DS002_00499_021_std.; Box boundaries exceed frame edge in ANN_DS002_00499_022_std.; Box boundaries exceed frame edge in ANN_DS002_00499_026_std.; Box boundaries exceed frame edge in ANN_DS002_00499_027_std.; Box boundaries exceed frame edge in ANN_DS002_00499_028_std.; Elongated box detected in ANN_DS002_00499_029_std (aspect: 8.14).; Box boundaries exceed frame edge in ANN_DS002_00499_031_std.
+- Image `DS002_00500` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00500_001_std.; Box boundaries exceed frame edge in ANN_DS002_00500_002_std.; Box boundaries exceed frame edge in ANN_DS002_00500_003_std.; Box boundaries exceed frame edge in ANN_DS002_00500_004_std.; Box boundaries exceed frame edge in ANN_DS002_00500_005_std.; Box boundaries exceed frame edge in ANN_DS002_00500_006_std.; Elongated box detected in ANN_DS002_00500_006_std (aspect: 5.09).; Box boundaries exceed frame edge in ANN_DS002_00500_007_std.
+- Image `DS002_00501` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00501_000_std.; Box boundaries exceed frame edge in ANN_DS002_00501_003_std.; Elongated box detected in ANN_DS002_00501_004_std (aspect: 5.42).; Box boundaries exceed frame edge in ANN_DS002_00501_005_std.; Elongated box detected in ANN_DS002_00501_005_std (aspect: 5.45).; Box boundaries exceed frame edge in ANN_DS002_00501_006_std.; Box boundaries exceed frame edge in ANN_DS002_00501_007_std.; Box boundaries exceed frame edge in ANN_DS002_00501_008_std.
+- Image `DS002_00502` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00502_001_std.; Box boundaries exceed frame edge in ANN_DS002_00502_002_std.; Box boundaries exceed frame edge in ANN_DS002_00502_003_std.; Box boundaries exceed frame edge in ANN_DS002_00502_004_std.; Box boundaries exceed frame edge in ANN_DS002_00502_005_std.; Box boundaries exceed frame edge in ANN_DS002_00502_006_std.; Box boundaries exceed frame edge in ANN_DS002_00502_007_std.
+- Image `DS002_00503` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00503_001_std.
+- Image `DS002_00504` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00504_001_std.
+- Image `DS002_00505` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00505_001_std.
+- Image `DS002_00509` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00509_001_std.; Box boundaries exceed frame edge in ANN_DS002_00509_004_std.; Box boundaries exceed frame edge in ANN_DS002_00509_005_std.; Elongated box detected in ANN_DS002_00509_008_std (aspect: 10.13).; Box boundaries exceed frame edge in ANN_DS002_00509_009_std.; Box boundaries exceed frame edge in ANN_DS002_00509_010_std.
+- Image `DS002_00510` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00510_001_std.; Box boundaries exceed frame edge in ANN_DS002_00510_004_std.; Box boundaries exceed frame edge in ANN_DS002_00510_005_std.; Elongated box detected in ANN_DS002_00510_008_std (aspect: 8.18).; Box boundaries exceed frame edge in ANN_DS002_00510_009_std.; Box boundaries exceed frame edge in ANN_DS002_00510_010_std.
+- Image `DS002_00511` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_00511_001_std.; Box boundaries exceed frame edge in ANN_DS002_00511_003_std.; Box boundaries exceed frame edge in ANN_DS002_00511_006_std.; Box boundaries exceed frame edge in ANN_DS002_00511_008_std.; Elongated box detected in ANN_DS002_00511_008_std (aspect: 11.08).; Box boundaries exceed frame edge in ANN_DS002_00511_009_std.; Elongated box detected in ANN_DS002_00511_009_std (aspect: 16.12).; Box boundaries exceed frame edge in ANN_DS002_00511_010_std.
+- Image `DS002_00576` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00577` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00578` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00604` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00605` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00607` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00616` [REJECTED]: Box area (0.000021) below threshold (0.000100) in ANN_DS002_00616_014_std.; Box area (0.000084) below threshold (0.000100) in ANN_DS002_00616_015_std.
+- Image `DS002_00618` [REJECTED]: Box area (0.000022) below threshold (0.000100) in ANN_DS002_00618_014_std.; Box area (0.000085) below threshold (0.000100) in ANN_DS002_00618_015_std.
+- Image `DS002_00630` [REJECTED]: Box area (0.000022) below threshold (0.000100) in ANN_DS002_00630_014_std.; Box area (0.000082) below threshold (0.000100) in ANN_DS002_00630_015_std.
+- Image `DS002_00634` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00635` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00636` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00639` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00641` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00644` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00647` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00648` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00649` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00676` [REJECTED]: Box area (0.000066) below threshold (0.000100) in ANN_DS002_00676_018_std.
+- Image `DS002_00678` [REJECTED]: Box area (0.000063) below threshold (0.000100) in ANN_DS002_00678_018_std.
+- Image `DS002_00689` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_00689_001_std (aspect: 5.01).
+- Image `DS002_00691` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00692` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00693` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00696` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00697` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00699` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00756` [REJECTED]: Elongated box detected in ANN_DS002_00756_006_std (aspect: 41.10).; Box area (0.000034) below threshold (0.000100) in ANN_DS002_00756_006_std.
+- Image `DS002_00854` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_00854_000_std (aspect: 6.22).
+- Image `DS002_00981` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00982` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_00984` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01001` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01002` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01003` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01007` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01010` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01012` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01032` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01032_000_std (aspect: 5.83).
+- Image `DS002_01045` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01045_003_std (aspect: 5.32).
+- Image `DS002_01052` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01052_001_std (aspect: 8.60).; Elongated box detected in ANN_DS002_01052_004_std (aspect: 5.91).
+- Image `DS002_01055` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01055_004_std (aspect: 6.48).
+- Image `DS002_01056` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01057` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01058` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01066` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01068` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01073` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01073_016_std (aspect: 5.25).
+- Image `DS002_01074` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01076` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01079` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01080` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01080_016_std (aspect: 5.81).
+- Image `DS002_01081` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01081_016_std (aspect: 6.67).
+- Image `DS002_01088` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01089` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01090` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01102` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01102_000_std (aspect: 30.38).
+- Image `DS002_01108` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01108_005_std (aspect: 7.55).
+- Image `DS002_01115` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01115_012_std (aspect: 5.05).
+- Image `DS002_01120` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01122` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01123` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01125` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01127` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01129` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01145` [REJECTED]: Box area (0.000034) below threshold (0.000100) in ANN_DS002_01145_001_std.
+- Image `DS002_01147` [REJECTED]: Box area (0.000030) below threshold (0.000100) in ANN_DS002_01147_003_std.
+- Image `DS002_01148` [REJECTED]: Box area (0.000033) below threshold (0.000100) in ANN_DS002_01148_001_std.
+- Image `DS002_01151` [REJECTED]: Box area (0.000033) below threshold (0.000100) in ANN_DS002_01151_003_std.
+- Image `DS002_01152` [REJECTED]: Box area (0.000034) below threshold (0.000100) in ANN_DS002_01152_003_std.
+- Image `DS002_01153` [REJECTED]: Box area (0.000034) below threshold (0.000100) in ANN_DS002_01153_001_std.
+- Image `DS002_01154` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01155` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01156` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01157` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01158` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01159` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01160` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01161` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01163` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01168` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01170` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01171` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01177` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01178` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01181` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01187` [REJECTED]: Box area (0.000022) below threshold (0.000100) in ANN_DS002_01187_002_std.
+- Image `DS002_01188` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01189` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01190` [REJECTED]: Box area (0.000021) below threshold (0.000100) in ANN_DS002_01190_002_std.
+- Image `DS002_01191` [REJECTED]: Box area (0.000022) below threshold (0.000100) in ANN_DS002_01191_002_std.
+- Image `DS002_01192` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01194` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01195` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01196` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01198` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01199` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01200` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01201` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01205` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01206` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01233` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01234` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01237` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01263` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01264` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01265` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01266` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01268` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01270` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01292` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01292_016_std (aspect: 5.35).
+- Image `DS002_01312` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01316` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01317` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01319` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01320` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01321` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01322` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01323` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01324` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01325` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01326` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01327` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01334` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01335` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01336` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01336_005_std (aspect: 10.27).
+- Image `DS002_01337` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01341` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01344` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01345` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01346` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01347` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01349` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01359` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01362` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01362_017_std (aspect: 7.68).
+- Image `DS002_01363` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01364` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01366` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01370` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01372` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01373` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01375` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01376` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01379` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01380` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01381` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01388` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01389` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01393` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01394` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01394_003_std (aspect: 6.13).
+- Image `DS002_01400` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01404` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01408` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01409` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01412` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01416` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01419` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01421` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01424` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01427` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01428` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01429` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01430` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01431` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01432` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01433` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01434` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01435` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01436` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01438` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01440` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01441` [REJECTED]: Box area (0.000033) below threshold (0.000100) in ANN_DS002_01441_019_std.
+- Image `DS002_01443` [REJECTED]: Box area (0.000034) below threshold (0.000100) in ANN_DS002_01443_019_std.
+- Image `DS002_01444` [REJECTED]: Box area (0.000032) below threshold (0.000100) in ANN_DS002_01444_019_std.
+- Image `DS002_01445` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01446` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01447` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01451` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01452` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01453` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01454` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01455` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01456` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01457` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01458` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01459` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01469` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01470` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01471` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01473` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01474` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01474_010_std (aspect: 5.43).
+- Image `DS002_01475` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01476` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01476_010_std (aspect: 11.42).
+- Image `DS002_01477` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01478` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01479` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01483` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01486` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01487` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01488` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01490` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01491` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01492` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01493` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01494` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01495` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01496` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01497` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01499` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01502` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01506` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01506_017_std (aspect: 5.41).
+- Image `DS002_01507` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01507_017_std (aspect: 5.72).
+- Image `DS002_01509` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01510` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01513` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01514` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01516` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01519` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01519_016_std (aspect: 5.28).; Elongated box detected in ANN_DS002_01519_017_std (aspect: 5.52).
+- Image `DS002_01521` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01523` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01547` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01547_000_std.
+- Image `DS002_01552` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01552_000_std.
+- Image `DS002_01553` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01553_000_std.
+- Image `DS002_01558` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01558_001_std.
+- Image `DS002_01573` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01573_000_std.
+- Image `DS002_01586` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01586_002_std.; Elongated box detected in ANN_DS002_01586_002_std (aspect: 7.68).
+- Image `DS002_01587` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01587_001_std.; Box boundaries exceed frame edge in ANN_DS002_01587_002_std.
+- Image `DS002_01588` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01588_001_std.; Box boundaries exceed frame edge in ANN_DS002_01588_002_std.
+- Image `DS002_01600` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_01600_000_std.
+- Image `DS002_01612` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01614` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01615` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01616` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01619` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01621` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01622` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01624` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01624_020_std (aspect: 5.16).
+- Image `DS002_01625` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01633` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01634` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01635` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01636` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01639` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01639_023_std (aspect: 5.03).
+- Image `DS002_01640` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01640_023_std (aspect: 5.31).
+- Image `DS002_01641` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01644` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01646` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01651` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01652` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01658` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01660` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01661` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01663` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01664` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01668` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01669` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01670` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01671` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01672` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01674` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01675` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01680` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01683` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01689` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01690` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01691` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01693` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01694` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01695` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01698` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01699` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01700` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01701` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01704` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01706` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01707` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01708` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01710` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01712` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01714` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01715` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01715_006_std (aspect: 5.23).
+- Image `DS002_01716` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01717` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01719` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01719_006_std (aspect: 5.65).; Elongated box detected in ANN_DS002_01719_011_std (aspect: 5.45).; Elongated box detected in ANN_DS002_01719_012_std (aspect: 5.90).
+- Image `DS002_01720` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01722` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01723` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01723_035_std (aspect: 5.43).
+- Image `DS002_01724` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01726` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01727` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01728` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01729` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01738` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01739` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01740` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01744` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01745` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01746` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01757` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01758` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01759` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01761` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01762` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01763` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01764` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01765` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01766` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01767` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01768` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01769` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01777` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01778` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01779` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01780` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01782` [REJECTED]: Elongated box detected in ANN_DS002_01782_009_std (aspect: 5.50).; Box area (0.000013) below threshold (0.000100) in ANN_DS002_01782_009_std.; Box area (0.000067) below threshold (0.000100) in ANN_DS002_01782_010_std.
+- Image `DS002_01783` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01785` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01786` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01786_007_std (aspect: 7.01).
+- Image `DS002_01787` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01788` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01790` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01793` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01795` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01796` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01798` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01799` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01801` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01815` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01816` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01823` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01825` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_01825_010_std (aspect: 5.68).
+- Image `DS002_01829` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01830` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01832` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01833` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01834` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01835` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01854` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01855` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01856` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01864` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01865` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01866` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01887` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01888` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01889` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01890` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01891` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01892` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01899` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01900` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01901` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01923` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01924` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01926` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01928` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01929` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01931` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01935` [REJECTED]: Box area (0.000021) below threshold (0.000100) in ANN_DS002_01935_017_std.
+- Image `DS002_01936` [REJECTED]: Box area (0.000017) below threshold (0.000100) in ANN_DS002_01936_017_std.
+- Image `DS002_01949` [REJECTED]: Box area (0.000021) below threshold (0.000100) in ANN_DS002_01949_017_std.
+- Image `DS002_01957` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01959` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01961` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01964` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01965` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01966` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01967` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01968` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01969` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01970` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01972` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_01978` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02127` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02127_001_std (aspect: 6.05).
+- Image `DS002_02246` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02249` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02251` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02269` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02270` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02271` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02272` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02273` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02277` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02278` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02279` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02315` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02316` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02317` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02320` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02320_003_std (aspect: 12.02).
+- Image `DS002_02329` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02329_021_std (aspect: 19.14).
+- Image `DS002_02339` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02341` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02343` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02345` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02346` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02349` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02350` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02351` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02352` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02354` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02357` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02359` [REJECTED]: Box area (0.000032) below threshold (0.000100) in ANN_DS002_02359_009_std.
+- Image `DS002_02369` [REJECTED]: Box area (0.000033) below threshold (0.000100) in ANN_DS002_02369_009_std.
+- Image `DS002_02375` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02378` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02379` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02381` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02382` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02383` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02384` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02385` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02386` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02421` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_02421_000_std.
+- Image `DS002_02422` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_02422_000_std.
+- Image `DS002_02434` [REJECTED]: Elongated box detected in ANN_DS002_02434_031_std (aspect: 39.46).; Box area (0.000081) below threshold (0.000100) in ANN_DS002_02434_031_std.
+- Image `DS002_02452` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02453` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02455` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02457` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02458` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02459` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02467` [REJECTED]: Box area (0.000046) below threshold (0.000100) in ANN_DS002_02467_002_std.
+- Image `DS002_02471` [REJECTED]: Box area (0.000048) below threshold (0.000100) in ANN_DS002_02471_002_std.
+- Image `DS002_02473` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02476` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02477` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02485` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02486` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02487` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02490` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02491` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02494` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02496` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02497` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02498` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02510` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02510_002_std (aspect: 6.02).
+- Image `DS002_02511` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02511_002_std (aspect: 5.30).
+- Image `DS002_02519` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02519_007_std (aspect: 9.25).
+- Image `DS002_02520` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02521` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02522` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02525` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02526` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02527` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02530` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02532` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02533` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02550` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02550_017_std (aspect: 13.62).
+- Image `DS002_02554` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02555` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02556` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02561` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02562` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02563` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02565` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02566` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02567` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02581` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02582` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02582_013_std (aspect: 5.09).
+- Image `DS002_02583` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02585` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02585_011_std (aspect: 5.34).
+- Image `DS002_02586` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02587` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02587_021_std (aspect: 14.28).
+- Image `DS002_02590` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02590_021_std (aspect: 14.54).
+- Image `DS002_02594` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02594_016_std (aspect: 6.33).
+- Image `DS002_02595` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02595_016_std (aspect: 5.71).
+- Image `DS002_02596` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02598` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02600` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02601` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02623` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02624` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02624_005_std (aspect: 5.91).; Elongated box detected in ANN_DS002_02624_028_std (aspect: 5.42).
+- Image `DS002_02626` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02627` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02630` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02635` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02637` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02641` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02641_009_std (aspect: 6.97).
+- Image `DS002_02649` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02649_007_std (aspect: 10.78).; Elongated box detected in ANN_DS002_02649_008_std (aspect: 5.98).
+- Image `DS002_02651` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02651_006_std (aspect: 5.02).; Elongated box detected in ANN_DS002_02651_008_std (aspect: 11.37).
+- Image `DS002_02670` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02672` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02679` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02679_020_std (aspect: 7.02).
+- Image `DS002_02683` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02683_019_std (aspect: 12.99).
+- Image `DS002_02685` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02686` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02695` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02696` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02697` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02703` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02703_000_std (aspect: 5.46).
+- Image `DS002_02704` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02704_000_std (aspect: 5.29).
+- Image `DS002_02710` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02710_000_std (aspect: 6.37).
+- Image `DS002_02711` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02711_000_std (aspect: 5.70).
+- Image `DS002_02714` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02717` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02735` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02736` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02738` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02739` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02761` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02763` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02766` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02768` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02773` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02773_005_std (aspect: 5.24).
+- Image `DS002_02776` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02776_005_std (aspect: 5.08).
+- Image `DS002_02783` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02784` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02786` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02788` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02801` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02802` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02804` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02806` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02808` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02808_004_std (aspect: 5.28).
+- Image `DS002_02827` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02827_017_std (aspect: 6.07).
+- Image `DS002_02839` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02840` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02841` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02842` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02843` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02844` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02855` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02855_046_std (aspect: 9.29).
+- Image `DS002_02859` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02859_046_std (aspect: 6.78).
+- Image `DS002_02862` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02862_046_std (aspect: 8.90).
+- Image `DS002_02866` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02870` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02873` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02874` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02879` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02884` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02892` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02892_012_std (aspect: 5.27).
+- Image `DS002_02900` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02900_012_std (aspect: 5.49).
+- Image `DS002_02903` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02903_012_std (aspect: 5.13).
+- Image `DS002_02919` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02919_007_std (aspect: 5.53).
+- Image `DS002_02934` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02936` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02937` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02980` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02981` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02983` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_02983_012_std (aspect: 29.38).
+- Image `DS002_02988` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02994` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02995` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02997` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_02998` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03000` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03002` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03004` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03004_006_std (aspect: 7.62).
+- Image `DS002_03005` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03005_006_std (aspect: 5.47).
+- Image `DS002_03009` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03009_006_std (aspect: 6.74).
+- Image `DS002_03022` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03023` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03026` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03027` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03028` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03028_002_std (aspect: 5.18).; Elongated box detected in ANN_DS002_03028_016_std (aspect: 6.51).
+- Image `DS002_03029` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03029_016_std (aspect: 6.25).
+- Image `DS002_03031` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03031_016_std (aspect: 7.59).
+- Image `DS002_03039` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03039_009_std (aspect: 5.48).
+- Image `DS002_03042` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03043` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03058` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03062` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03068` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03068_000_std (aspect: 12.79).
+- Image `DS002_03079` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03089` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03089_012_std (aspect: 5.24).
+- Image `DS002_03093` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03098` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03099` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03104` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03104_015_std (aspect: 7.64).
+- Image `DS002_03109` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03109_016_std (aspect: 6.59).
+- Image `DS002_03110` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03110_016_std (aspect: 6.12).
+- Image `DS002_03116` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03117` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03123` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03127` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03134` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03134_005_std (aspect: 5.99).
+- Image `DS002_03136` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03136_005_std (aspect: 6.69).
+- Image `DS002_03137` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03137_005_std (aspect: 6.73).
+- Image `DS002_03138` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03139` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03151` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03154` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03193` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03193_014_std (aspect: 12.72).
+- Image `DS002_03197` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03200` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03204` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03204_025_std (aspect: 9.16).
+- Image `DS002_03206` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03206_023_std (aspect: 24.79).
+- Image `DS002_03207` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03209` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03212` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03212_013_std (aspect: 6.84).
+- Image `DS002_03213` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03213_013_std (aspect: 5.48).
+- Image `DS002_03233` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03233_007_std (aspect: 27.66).
+- Image `DS002_03234` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03234_007_std (aspect: 6.00).
+- Image `DS002_03242` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03244` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03245` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03251` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03251_005_std (aspect: 5.77).
+- Image `DS002_03268` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03268_008_std (aspect: 7.30).
+- Image `DS002_03270` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03270_001_std (aspect: 9.49).
+- Image `DS002_03275` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03278` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03280` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03283` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03284` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03286` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03289` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03290` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03290_013_std (aspect: 5.96).
+- Image `DS002_03292` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03292_013_std (aspect: 10.86).
+- Image `DS002_03293` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03295` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03296` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03296_013_std (aspect: 5.38).
+- Image `DS002_03298` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03298_031_std (aspect: 5.74).
+- Image `DS002_03303` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03303_020_std (aspect: 5.04).
+- Image `DS002_03304` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03304_020_std (aspect: 6.80).
+- Image `DS002_03316` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03317` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03320` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03326` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03327` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03329` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03330` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03330_019_std (aspect: 6.02).
+- Image `DS002_03335` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03335_019_std (aspect: 5.08).
+- Image `DS002_03339` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03340` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03340_007_std (aspect: 6.09).
+- Image `DS002_03341` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03341_007_std (aspect: 5.88).
+- Image `DS002_03342` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03343` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03347` [REJECTED]: Elongated box detected in ANN_DS002_03347_014_std (aspect: 17.21).; Box area (0.000069) below threshold (0.000100) in ANN_DS002_03347_014_std.
+- Image `DS002_03353` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03353_003_std (aspect: 5.54).
+- Image `DS002_03355` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03355_003_std (aspect: 5.34).; Elongated box detected in ANN_DS002_03355_012_std (aspect: 6.79).
+- Image `DS002_03372` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03376` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03379` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03402` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03403` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03405` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03435` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03436` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03437` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03445` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03446` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03452` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03502` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03502_018_std (aspect: 8.27).
+- Image `DS002_03504` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03505` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03506` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03525` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03525_027_std (aspect: 6.49).
+- Image `DS002_03530` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03531` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03532` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03533` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03533_007_std (aspect: 6.09).
+- Image `DS002_03535` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03535_006_std (aspect: 6.12).
+- Image `DS002_03539` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03539_012_std (aspect: 5.86).
+- Image `DS002_03544` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03544_004_std (aspect: 5.44).
+- Image `DS002_03553` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03556` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03563` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03563_011_std (aspect: 5.45).
+- Image `DS002_03569` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03569_005_std (aspect: 6.50).
+- Image `DS002_03572` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03573` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03577` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03593` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03593_005_std (aspect: 9.50).
+- Image `DS002_03594` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03596` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03599` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03599_003_std (aspect: 9.00).
+- Image `DS002_03600` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03604` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03605` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03622` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03623` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03625` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03632` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03633` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03633_003_std (aspect: 5.44).
+- Image `DS002_03635` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03637` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03642` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03642_004_std (aspect: 17.27).
+- Image `DS002_03653` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03654` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03657` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03660` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03662` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03663` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03666` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03667` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03671` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03686` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03686_005_std (aspect: 5.06).
+- Image `DS002_03703` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03704` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03705` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03735` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03735_011_std (aspect: 5.37).
+- Image `DS002_03765` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03765_012_std (aspect: 11.82).
+- Image `DS002_03766` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03770` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03771` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03773` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03774` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03774_002_std (aspect: 5.55).
+- Image `DS002_03775` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03776` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03778` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03779` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03780` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03780_019_std (aspect: 5.45).
+- Image `DS002_03785` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03785_003_std (aspect: 8.55).
+- Image `DS002_03786` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03788` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03788_019_std (aspect: 6.43).
+- Image `DS002_03789` [REJECTED]: Elongated box detected in ANN_DS002_03789_019_std (aspect: 77.32).; Box area (0.000094) below threshold (0.000100) in ANN_DS002_03789_019_std.
+- Image `DS002_03809` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03811` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03812` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03831` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03831_001_std (aspect: 5.66).
+- Image `DS002_03835` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03837` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03838` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03850` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03850_004_std (aspect: 5.92).
+- Image `DS002_03851` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03851_004_std (aspect: 5.30).
+- Image `DS002_03868` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03868_010_std (aspect: 5.64).
+- Image `DS002_03870` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03870_010_std (aspect: 12.30).
+- Image `DS002_03874` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03875` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03876` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03893` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03893_000_std (aspect: 6.36).
+- Image `DS002_03897` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03897_000_std (aspect: 5.02).
+- Image `DS002_03900` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03900_000_std (aspect: 5.17).
+- Image `DS002_03922` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03922_004_std (aspect: 5.09).
+- Image `DS002_03928` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03929` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03930` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03931` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03932` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03933` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03935` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03937` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03938` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03940` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03940_008_std (aspect: 7.20).
+- Image `DS002_03962` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03962_019_std (aspect: 6.36).
+- Image `DS002_03963` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03963_019_std (aspect: 6.37).
+- Image `DS002_03969` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_03969_018_std (aspect: 5.21).
+- Image `DS002_03981` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03983` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03985` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03990` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03992` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03993` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03997` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_03998` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04002` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04009` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04012` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04014` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_04014_003_std (aspect: 5.04).
+- Image `DS002_04020` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04066` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04067` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04068` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04071` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_04071_002_std (aspect: 8.13).
+- Image `DS002_04077` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_04077_002_std (aspect: 7.67).
+- Image `DS002_04078` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_04078_002_std (aspect: 5.17).
+- Image `DS002_04079` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_04079_002_std (aspect: 5.02).
+- Image `DS002_04083` [REJECTED]: Elongated box detected in ANN_DS002_04083_002_std (aspect: 42.20).; Box area (0.000068) below threshold (0.000100) in ANN_DS002_04083_002_std.
+- Image `DS002_04117` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_04117_002_std (aspect: 6.90).
+- Image `DS002_04207` [REVIEW QUEUE]: Elongated box detected in ANN_DS002_04207_010_std (aspect: 5.23).
+- Image `DS002_04210` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_04210_003_std.
+- Image `DS002_04214` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_04214_001_std.; Box boundaries exceed frame edge in ANN_DS002_04214_002_std.; Box boundaries exceed frame edge in ANN_DS002_04214_004_std.; Box boundaries exceed frame edge in ANN_DS002_04214_006_std.; Box boundaries exceed frame edge in ANN_DS002_04214_008_std.; Elongated box detected in ANN_DS002_04214_008_std (aspect: 5.04).; Elongated box detected in ANN_DS002_04214_009_std (aspect: 7.55).; Box boundaries exceed frame edge in ANN_DS002_04214_010_std.; Elongated box detected in ANN_DS002_04214_010_std (aspect: 11.09).; Box boundaries exceed frame edge in ANN_DS002_04214_011_std.
+- Image `DS002_04267` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_04267_004_std.; Box boundaries exceed frame edge in ANN_DS002_04267_009_std.
+- Image `DS002_04286` [REJECTED]: Box boundaries exceed frame edge in ANN_DS002_04286_000_std.
+- Image `DS002_04337` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04338` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04339` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04345` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04347` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04348` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04349` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04350` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04351` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04352` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04356` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04358` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04359` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04360` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04362` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04363` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04364` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04366` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04367` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04369` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04370` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04371` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04374` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04383` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04384` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04385` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04386` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04388` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04389` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04392` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04395` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04397` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04398` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04399` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04400` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04401` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04403` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04404` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04407` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS002_04408` [REVIEW QUEUE]: Image contains zero annotation labels.

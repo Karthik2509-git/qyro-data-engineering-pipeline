@@ -1,0 +1,12 @@
+{
+  "model": "qyro_acne_v1_best.pt",
+  "conf": 0.25,
+  "iou": 0.6,
+  "dataset": "DS001",
+  "dataset_fingerprint": "e2f4fc3a461623930e6435d11a0394dcd97e50a9376f36c9ed4560dce3324816",
+  "pipeline_version": "1.0",
+  "timestamp": "2026-06-28T14:59:16.737308",
+  "ultralytics_version": "8.4.33",
+  "cuda": "True",
+  "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU"
+}

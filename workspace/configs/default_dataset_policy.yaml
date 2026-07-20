@@ -1,0 +1,92 @@
+# Default Dataset Engineering Pipeline Configuration
+# Governs paths, database locations, metrics thresholds, and formatting rules.
+
+# System Directories
+paths:
+  database_path: "workspace/database/dataset_index.sqlite"
+  external_dir: "workspace/datasets/external"
+  raw_dir: "workspace/datasets/raw"
+  standardized_dir: "workspace/datasets/standardized"
+  audited_dir: "workspace/datasets/audited"
+  curated_dir: "workspace/datasets/curated"
+  rejected_dir: "workspace/datasets/rejected"
+  reports_dir: "workspace/reports"
+
+# Schema Harmonization Rules
+harmonization:
+  target_classes:
+    - "acne"
+  class_mappings:
+    # Mappings of multiple synonyms to standard "acne" label
+    acne: "acne"
+    Acne: "acne"
+    pimple: "acne"
+    pimples: "acne"
+    Pimples: "acne"
+    papule: "acne"
+    pustule: "acne"
+    nodule: "acne"
+    comedo: "acne"
+    comedone: "acne"
+    blackhead: "acne"
+    whitehead: "acne"
+    lesion: "acne"
+    fore: "acne"
+    forehead: "acne"
+    zit: "acne"
+    acne_lesion: "acne"
+  ignore_classes:
+    - "scar"
+    - "rosacea"
+    - "eczema"
+
+# Quality Thresholds & Parameters
+quality_metrics:
+  image:
+    min_width: 640
+    min_height: 640
+    blur_threshold: 100.0          # Minimum Laplacian variance for auto-accept
+    blur_review_threshold: 80.0    # Values below this are rejected, between 80-100 are flagged for human review
+    exposure:
+      dark_threshold: 0.15         # Rejects if >85% of pixels are <15% intensity
+      bright_threshold: 0.85       # Rejects if >85% of pixels are >85% intensity
+  annotations:
+    min_box_area_ratio: 0.0001     # Box area must be at least 0.01% of image area
+    max_box_area_ratio: 0.8        # Rejects single boxes covering >80% of image
+    overlap_iou_threshold: 0.85    # Detects redundant/suspicious boxes on same lesion
+  scoring_weights:
+    image_quality: 0.40            # Weight for image metrics (blur, exposure, contrast, resolution)
+    annotation_quality: 0.35       # Weight for annotation layout (out-of-bounds, density, overlap)
+    yolo_agreement: 0.25           # Weight for model consensus vs annotations
+  acceptance_overall_score: 8.0     # Minimum overall score required to auto-accept into curated pool
+
+# Deduplication Configuration
+deduplication:
+  hash_type: "dhash"               # 'dhash', 'phash', or 'ahash'
+  hash_size: 8
+  hamming_distance_threshold: 4    # Maximum hamming distance to flag as near-duplicate
+
+# Target Output Settings for Resizing & Standardization
+export:
+  target_width: 640
+  target_height: 640
+  letterbox_color: [114, 114, 114] # Gray padding for aspect-ratio preservation
+  split_ratios:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+  output_format: "yolo"            # Format options: "yolo", "coco"
+
+# Licensing Policies
+licensing:
+  # Map of license string patterns to (attribution_required, commercial_use_allowed, validation_status)
+  rules:
+    "mit": [0, 1, "valid"]
+    "apache-2.0": [0, 1, "valid"]
+    "bsd": [0, 1, "valid"]
+    "cc0": [0, 1, "valid"]
+    "cc-by-4.0": [1, 1, "valid"]
+    "cc-by-sa-4.0": [1, 1, "valid"]
+    "cc-by-nc-4.0": [1, 0, "review"] # Non-commercial license triggers review
+    "proprietary": [1, 0, "review"]
+    "unknown": [1, 0, "review"]

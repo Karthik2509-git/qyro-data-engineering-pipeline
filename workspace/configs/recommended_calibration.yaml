@@ -1,0 +1,17 @@
+# Recommended Quality Calibration Parameters - Frozen Version 1.0
+# Generated on: 2026-06-28 17:46:01
+
+quality_metrics:
+  # Blur (raw Laplacian variance threshold)
+  blur_threshold: 25.0
+  
+  # Exposure (raw grayscale mean intensity bounds)
+  exposure_min_threshold: 76.5   # 30% brightness
+  exposure_max_threshold: 216.75  # 85% brightness
+  
+  # YOLO Agreement (F1 threshold to avoid review)
+  agreement_threshold: 0.50
+  
+  # Border box penalty (distance margin from edges & truncation box size)
+  border_penalty_distance: 0.005
+  border_penalty_min_box_size: 0.04

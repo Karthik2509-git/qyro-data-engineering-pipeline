@@ -1,0 +1,185 @@
+# DS005 Global Duplicate Audit Report
+
+This report documents near-duplicate and exact-duplicate image occurrences identified between dataset **DS005** and the existing global merged pool (DS001–DS004).
+
+---
+
+## 📈 Global Deduplication Summary
+
+- **Total Candidates Evaluated**: 352
+- **Global Duplicates Detected & Deactivated**: 167
+- **Earliest Master Policy**: Retained original images from DS001–DS004, skipped duplication in DS005.
+
+---
+
+## ⚠️ Global Duplicates Log
+
+| DS005 Duplicate Image | Master Image | Master Dataset | Match Type |
+| :--- | :--- | :--- | :--- |
+| `DS005_00012` | `DS001_01331` | `DS001` | dHash match (Hamming distance: 4) |
+| `DS005_00017` | `DS001_01415` | `DS001` | dHash match (Hamming distance: 4) |
+| `DS005_00020` | `DS004_00126` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00026` | `DS004_00142` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00049` | `DS004_00215` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00059` | `DS004_00242` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00069` | `DS001_01808` | `DS001` | dHash match (Hamming distance: 3) |
+| `DS005_00093` | `DS004_00407` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00114` | `DS004_01345` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00120` | `DS004_00497` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00122` | `DS004_00507` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00123` | `DS004_00513` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00125` | `DS004_00522` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00132` | `DS004_00558` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00135` | `DS004_00564` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00136` | `DS004_00571` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00139` | `DS004_01350` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00144` | `DS004_00627` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00155` | `DS004_00697` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00165` | `DS004_00745` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00169` | `DS004_00762` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00180` | `DS004_00830` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00184` | `DS004_00844` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00193` | `DS004_00049` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00194` | `DS004_00901` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00195` | `DS004_00908` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00196` | `DS004_00911` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00197` | `DS004_00934` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00206` | `DS004_00954` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00289` | `DS004_00075` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00291` | `DS004_00077` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00295` | `DS004_00989` | `DS004` | dHash match (Hamming distance: 2) |
+| `DS005_00300` | `DS004_00087` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00302` | `DS004_00091` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00303` | `DS004_00093` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00308` | `DS004_00003` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00309` | `DS004_00102` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00311` | `DS004_00104` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00317` | `DS004_00111` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00318` | `DS004_00112` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00320` | `DS004_00114` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00326` | `DS004_00119` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00329` | `DS004_01320` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00332` | `DS004_00130` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00333` | `DS004_00131` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00334` | `DS004_00005` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00354` | `DS004_00155` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00360` | `DS001_01525` | `DS001` | dHash match (Hamming distance: 1) |
+| `DS005_00374` | `DS004_00188` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00381` | `DS004_00195` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00403` | `DS004_00224` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00409` | `DS004_00230` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00412` | `DS001_07864` | `DS001` | dHash match (Hamming distance: 4) |
+| `DS005_00424` | `DS004_00248` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00429` | `DS004_01332` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00431` | `DS004_00252` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00432` | `DS004_00253` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00436` | `DS004_00258` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00440` | `DS004_00262` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00452` | `DS004_00276` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00455` | `DS001_06468` | `DS001` | dHash match (Hamming distance: 0) |
+| `DS005_00458` | `DS001_01933` | `DS001` | dHash match (Hamming distance: 4) |
+| `DS005_00463` | `DS004_00291` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00478` | `DS004_00308` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00482` | `DS004_00314` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00486` | `DS004_00320` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00490` | `DS004_00324` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00491` | `DS004_00325` | `DS004` | dHash match (Hamming distance: 2) |
+| `DS005_00504` | `DS004_00340` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00506` | `DS004_00343` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00507` | `DS001_06526` | `DS001` | dHash match (Hamming distance: 4) |
+| `DS005_00508` | `DS004_00345` | `DS004` | dHash match (Hamming distance: 2) |
+| `DS005_00530` | `DS004_00369` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00536` | `DS004_00375` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00537` | `DS004_00376` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00540` | `DS004_00379` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00547` | `DS004_00388` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00550` | `DS004_00391` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00551` | `DS004_01341` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00552` | `DS004_00393` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00556` | `DS004_00397` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00558` | `DS004_00399` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00561` | `DS004_00404` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00562` | `DS004_00406` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00564` | `DS004_00408` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00568` | `DS004_00417` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00574` | `DS001_02143` | `DS001` | dHash match (Hamming distance: 3) |
+| `DS005_00583` | `DS004_00440` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00625` | `DS004_00500` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00632` | `DS004_00511` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00634` | `DS004_00514` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00635` | `DS004_00515` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00636` | `DS004_00517` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00637` | `DS004_00520` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00640` | `DS004_00525` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00644` | `DS004_00530` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00646` | `DS004_01348` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00652` | `DS004_00538` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00662` | `DS004_00557` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00663` | `DS004_00560` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00665` | `DS004_00565` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00672` | `DS004_00577` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00673` | `DS004_00580` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00674` | `DS004_00581` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00677` | `DS004_00583` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00678` | `DS004_00585` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00683` | `DS004_00590` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00690` | `DS004_00598` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00692` | `DS004_00600` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00695` | `DS001_02625` | `DS001` | dHash match (Hamming distance: 4) |
+| `DS005_00700` | `DS004_00032` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00701` | `DS004_00609` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00712` | `DS004_00621` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00728` | `DS004_00644` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00730` | `DS004_01352` | `DS004` | dHash match (Hamming distance: 2) |
+| `DS005_00746` | `DS004_00672` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00747` | `DS004_01354` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00751` | `DS004_00681` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00753` | `DS004_00683` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00761` | `DS004_00692` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00765` | `DS004_00700` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00779` | `DS004_00720` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00790` | `DS004_00736` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00793` | `DS004_00740` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00801` | `DS004_00753` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00808` | `DS004_00761` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00834` | `DS004_00795` | `DS004` | dHash match (Hamming distance: 2) |
+| `DS005_00839` | `DS004_00801` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00844` | `DS004_00044` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00845` | `DS004_00809` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00846` | `DS004_00045` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00847` | `DS004_00810` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00850` | `DS004_00816` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00851` | `DS004_00817` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00858` | `DS004_00829` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00871` | `DS004_00848` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00879` | `DS004_00047` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00890` | `DS004_00871` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00906` | `DS004_00888` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00915` | `DS004_00900` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_00923` | `DS001_03492` | `DS001` | dHash match (Hamming distance: 4) |
+| `DS005_00924` | `DS004_00910` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00928` | `DS004_00914` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00933` | `DS004_00919` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00936` | `DS004_00923` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00940` | `DS004_00929` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00955` | `DS004_00951` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00961` | `DS004_00959` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00963` | `DS004_00961` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00971` | `DS004_00975` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_00993` | `DS004_01372` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01010` | `DS004_01039` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01016` | `DS004_01051` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01024` | `DS004_01066` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01049` | `DS004_01103` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01052` | `DS004_01107` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01086` | `DS004_00063` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01127` | `DS004_00001` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01148` | `DS004_00348` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01172` | `DS004_01347` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01179` | `DS004_00575` | `DS004` | dHash match (Hamming distance: 1) |
+| `DS005_01197` | `DS004_00800` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01206` | `DS004_00865` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01209` | `DS001_08121` | `DS001` | dHash match (Hamming distance: 4) |
+| `DS005_01217` | `DS004_00965` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01229` | `DS004_01045` | `DS004` | dHash match (Hamming distance: 0) |
+| `DS005_01232` | `DS004_01065` | `DS004` | dHash match (Hamming distance: 0) |

@@ -1,0 +1,714 @@
+# Annotation Sanity Audit: DS001
+
+*Generated on: 2026-06-27 14:42:28*
+
+## Executive Summary
+Sanity checks on box dimensions and overlaps.
+
+## Audit Verification Breakdown
+- **Total Images Checked**: 8077
+- **Clean (Passed Annotations)**: 7378
+- **Logical Rejections**: 143
+- **Flagged for Review (Overlaps/Elongated/Giant)**: 556
+
+
+## Failed/Flagged Annotations Audit Log
+- Image `DS001_00022` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_00022_011_std.
+- Image `DS001_00023` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_00023_015_std.
+- Image `DS001_00030` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_00055` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_00059` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00059_012_std (aspect: 5.05).; Elongated box detected in ANN_DS001_00059_013_std (aspect: 5.31).; Elongated box detected in ANN_DS001_00059_015_std (aspect: 5.77).
+- Image `DS001_00060` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_00062` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00062_013_std (aspect: 5.29).
+- Image `DS001_00072` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00072_004_std (aspect: 7.60).
+- Image `DS001_00126` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00126_010_std (aspect: 6.86).
+- Image `DS001_00133` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_00141` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00141_008_std (aspect: 6.00).
+- Image `DS001_00144` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00144_004_std (aspect: 8.92).
+- Image `DS001_00146` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00146_004_std (aspect: 6.00).
+- Image `DS001_00207` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00207_000_std (aspect: 5.22).
+- Image `DS001_00243` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_00243_041_std.; Elongated box detected in ANN_DS001_00243_043_std (aspect: 6.25).
+- Image `DS001_00312` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00312_001_std (aspect: 9.00).
+- Image `DS001_00327` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00327_001_std (aspect: 8.10).
+- Image `DS001_00342` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00342_004_std (aspect: 5.55).
+- Image `DS001_00344` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00344_012_std (aspect: 5.09).
+- Image `DS001_00376` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00376_002_std (aspect: 9.00).
+- Image `DS001_00388` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00388_006_std (aspect: 5.25).
+- Image `DS001_00416` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00416_002_std (aspect: 5.11).
+- Image `DS001_00442` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00442_014_std (aspect: 5.25).
+- Image `DS001_00463` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00463_001_std (aspect: 5.50).
+- Image `DS001_00467` [REJECTED]: Box area (0.000031) below threshold (0.000100) in ANN_DS001_00467_015_std.
+- Image `DS001_00484` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00484_001_std (aspect: 7.67).
+- Image `DS001_00492` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00492_001_std (aspect: 7.44).; Elongated box detected in ANN_DS001_00492_002_std (aspect: 7.54).; Elongated box detected in ANN_DS001_00492_003_std (aspect: 6.18).
+- Image `DS001_00493` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00493_001_std (aspect: 7.48).; Elongated box detected in ANN_DS001_00493_002_std (aspect: 7.77).; Elongated box detected in ANN_DS001_00493_003_std (aspect: 6.00).
+- Image `DS001_00525` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00525_001_std (aspect: 9.52).; Elongated box detected in ANN_DS001_00525_002_std (aspect: 7.55).
+- Image `DS001_00526` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00526_001_std (aspect: 9.76).; Elongated box detected in ANN_DS001_00526_002_std (aspect: 7.53).
+- Image `DS001_00528` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00528_001_std (aspect: 9.78).; Elongated box detected in ANN_DS001_00528_002_std (aspect: 7.58).
+- Image `DS001_00541` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00541_002_std (aspect: 8.38).
+- Image `DS001_00573` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00573_009_std (aspect: 7.08).
+- Image `DS001_00592` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00592_012_std (aspect: 6.67).
+- Image `DS001_00602` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00602_005_std (aspect: 6.29).; Elongated box detected in ANN_DS001_00602_006_std (aspect: 5.83).
+- Image `DS001_00605` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00605_000_std (aspect: 5.09).
+- Image `DS001_00607` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00607_000_std (aspect: 5.21).
+- Image `DS001_00609` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00609_000_std (aspect: 5.62).
+- Image `DS001_00622` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00622_001_std (aspect: 5.35).; Elongated box detected in ANN_DS001_00622_008_std (aspect: 5.70).
+- Image `DS001_00624` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00624_001_std (aspect: 5.32).; Elongated box detected in ANN_DS001_00624_008_std (aspect: 5.70).
+- Image `DS001_00625` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00625_001_std (aspect: 5.31).; Elongated box detected in ANN_DS001_00625_008_std (aspect: 5.79).
+- Image `DS001_00656` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00656_002_std (aspect: 6.54).; Elongated box detected in ANN_DS001_00656_003_std (aspect: 8.70).
+- Image `DS001_00657` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00657_002_std (aspect: 6.50).
+- Image `DS001_00659` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00659_002_std (aspect: 6.53).; Elongated box detected in ANN_DS001_00659_003_std (aspect: 5.15).
+- Image `DS001_00664` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00664_002_std (aspect: 7.36).
+- Image `DS001_00666` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00666_002_std (aspect: 7.37).
+- Image `DS001_00684` [REJECTED]: Box area (0.000077) below threshold (0.000100) in ANN_DS001_00684_004_std.
+- Image `DS001_00712` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00712_003_std (aspect: 6.00).
+- Image `DS001_00787` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00787_001_std (aspect: 6.13).
+- Image `DS001_00816` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00816_004_std (aspect: 7.89).
+- Image `DS001_00820` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00820_009_std (aspect: 7.07).
+- Image `DS001_00821` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00821_003_std (aspect: 10.38).
+- Image `DS001_00843` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00843_003_std (aspect: 5.67).; Elongated box detected in ANN_DS001_00843_004_std (aspect: 12.50).
+- Image `DS001_00850` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_00856` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00856_007_std (aspect: 5.67).
+- Image `DS001_00876` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00876_008_std (aspect: 5.40).
+- Image `DS001_00880` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_00888` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00888_001_std (aspect: 5.36).
+- Image `DS001_00891` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00891_003_std (aspect: 10.23).
+- Image `DS001_00933` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00933_000_std (aspect: 6.91).
+- Image `DS001_00945` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00945_006_std (aspect: 6.73).
+- Image `DS001_00962` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_00968` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00968_012_std (aspect: 5.19).
+- Image `DS001_00972` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00972_000_std (aspect: 6.50).
+- Image `DS001_00974` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00974_012_std (aspect: 6.67).
+- Image `DS001_00976` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00976_027_std (aspect: 5.29).
+- Image `DS001_00982` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00982_006_std (aspect: 5.49).
+- Image `DS001_00984` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_00984_017_std (aspect: 6.13).
+- Image `DS001_01000` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01000_000_std (aspect: 5.25).
+- Image `DS001_01001` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01001_018_std (aspect: 7.77).
+- Image `DS001_01021` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01025` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01029` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01030` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01034` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01034_020_std (aspect: 5.38).; Elongated box detected in ANN_DS001_01034_022_std (aspect: 7.23).
+- Image `DS001_01046` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01046_004_std (aspect: 5.69).
+- Image `DS001_01048` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01048_003_std (aspect: 6.33).
+- Image `DS001_01052` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01052_012_std (aspect: 6.82).
+- Image `DS001_01053` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01053_006_std (aspect: 7.18).
+- Image `DS001_01054` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01058` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01058_003_std (aspect: 6.37).
+- Image `DS001_01063` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01063_023_std (aspect: 6.50).
+- Image `DS001_01067` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01079` [REJECTED]: Box area (0.000037) below threshold (0.000100) in ANN_DS001_01079_003_std.; Box area (0.000098) below threshold (0.000100) in ANN_DS001_01079_004_std.
+- Image `DS001_01080` [REJECTED]: Box area (0.000059) below threshold (0.000100) in ANN_DS001_01080_002_std.; Elongated box detected in ANN_DS001_01080_010_std (aspect: 5.55).; Elongated box detected in ANN_DS001_01080_016_std (aspect: 7.20).
+- Image `DS001_01083` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01087` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01087_005_std (aspect: 5.12).
+- Image `DS001_01100` [REJECTED]: Box area (0.000031) below threshold (0.000100) in ANN_DS001_01100_002_std.
+- Image `DS001_01102` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01102_006_std (aspect: 5.56).
+- Image `DS001_01105` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01106` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01107` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01107_001_std (aspect: 7.50).; Elongated box detected in ANN_DS001_01107_023_std (aspect: 5.47).
+- Image `DS001_01113` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01114` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01114_000_std (aspect: 5.67).
+- Image `DS001_01118` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01118_000_std (aspect: 6.07).
+- Image `DS001_01121` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01121_006_std (aspect: 5.71).
+- Image `DS001_01143` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01143_000_std (aspect: 7.22).
+- Image `DS001_01149` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01149_007_std (aspect: 6.94).
+- Image `DS001_01157` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01157_013_std (aspect: 5.24).
+- Image `DS001_01164` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01164_018_std (aspect: 5.47).
+- Image `DS001_01178` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01178_000_std (aspect: 7.81).
+- Image `DS001_01180` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01180_003_std (aspect: 5.09).
+- Image `DS001_01185` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01185_006_std (aspect: 8.55).
+- Image `DS001_01200` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01201` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01201_009_std (aspect: 5.47).
+- Image `DS001_01206` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01209` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01209_009_std (aspect: 6.07).
+- Image `DS001_01213` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01213_000_std (aspect: 8.44).
+- Image `DS001_01216` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01219` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01220` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01221` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01223` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01225` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01225_002_std (aspect: 5.06).
+- Image `DS001_01226` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01231` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01231_018_std (aspect: 6.25).
+- Image `DS001_01234` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01238` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01238_015_std (aspect: 6.44).; Elongated box detected in ANN_DS001_01238_017_std (aspect: 5.31).
+- Image `DS001_01240` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01240_012_std (aspect: 11.00).
+- Image `DS001_01244` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01246` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01248` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01248_014_std (aspect: 5.36).
+- Image `DS001_01251` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01252` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_01252_007_std.
+- Image `DS001_01257` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01257_011_std (aspect: 6.59).
+- Image `DS001_01258` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01260` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01260_013_std (aspect: 12.20).
+- Image `DS001_01261` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01261_002_std (aspect: 6.91).
+- Image `DS001_01262` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01263` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01263_002_std (aspect: 5.78).
+- Image `DS001_01267` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01270` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01276` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01277` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01277_006_std (aspect: 6.10).; Elongated box detected in ANN_DS001_01277_007_std (aspect: 5.67).
+- Image `DS001_01278` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01281` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01285` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_01317` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01317_004_std (aspect: 6.67).
+- Image `DS001_01612` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01612_006_std (aspect: 5.42).
+- Image `DS001_01742` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01742_003_std (aspect: 5.33).
+- Image `DS001_01744` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01744_003_std (aspect: 5.33).
+- Image `DS001_01767` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01767_000_std (aspect: 6.67).
+- Image `DS001_01777` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01777_000_std (aspect: 6.83).
+- Image `DS001_01791` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01791_010_std (aspect: 7.50).
+- Image `DS001_01856` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_01856_009_std (aspect: 5.25).
+- Image `DS001_02201` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02201_001_std (aspect: 6.53).
+- Image `DS001_02280` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02280_002_std (aspect: 6.50).
+- Image `DS001_02308` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02308_005_std (aspect: 6.05).
+- Image `DS001_02366` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02366_004_std (aspect: 6.25).
+- Image `DS001_02373` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02373_007_std (aspect: 5.03).
+- Image `DS001_02448` [REJECTED]: Box area (0.000037) below threshold (0.000100) in ANN_DS001_02448_015_std.
+- Image `DS001_02481` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02481_015_std (aspect: 5.20).
+- Image `DS001_02514` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02514_005_std (aspect: 10.58).
+- Image `DS001_02520` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02520_013_std (aspect: 6.00).
+- Image `DS001_02673` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02673_003_std (aspect: 6.25).
+- Image `DS001_02690` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02690_000_std (aspect: 5.20).
+- Image `DS001_02725` [REJECTED]: Box area (0.000039) below threshold (0.000100) in ANN_DS001_02725_000_std.
+- Image `DS001_02726` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_02726_000_std.
+- Image `DS001_02727` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_02727_000_std.
+- Image `DS001_02738` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_02738_008_std.; Box area (0.000088) below threshold (0.000100) in ANN_DS001_02738_010_std.
+- Image `DS001_02781` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02781_004_std (aspect: 6.33).
+- Image `DS001_02808` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02808_008_std (aspect: 9.09).
+- Image `DS001_02831` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02831_007_std (aspect: 7.12).
+- Image `DS001_02854` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02854_020_std (aspect: 6.18).
+- Image `DS001_02867` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02867_018_std (aspect: 7.50).
+- Image `DS001_02880` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02880_012_std (aspect: 11.50).; Elongated box detected in ANN_DS001_02880_024_std (aspect: 5.47).
+- Image `DS001_02883` [REJECTED]: Box area (0.000005) below threshold (0.000100) in ANN_DS001_02883_043_std.
+- Image `DS001_02888` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02888_037_std (aspect: 6.00).
+- Image `DS001_02904` [REJECTED]: Box area (0.000060) below threshold (0.000100) in ANN_DS001_02904_009_std.
+- Image `DS001_02906` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02906_003_std (aspect: 6.00).
+- Image `DS001_02929` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02929_004_std (aspect: 5.62).
+- Image `DS001_02963` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_02963_065_std (aspect: 5.33).
+- Image `DS001_03061` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_03061_032_std.
+- Image `DS001_03104` [REJECTED]: Box area (0.000034) below threshold (0.000100) in ANN_DS001_03104_003_std.
+- Image `DS001_03105` [REJECTED]: Box area (0.000031) below threshold (0.000100) in ANN_DS001_03105_003_std.
+- Image `DS001_03107` [REJECTED]: Box area (0.000031) below threshold (0.000100) in ANN_DS001_03107_003_std.
+- Image `DS001_03115` [REJECTED]: Box area (0.000005) below threshold (0.000100) in ANN_DS001_03115_007_std.
+- Image `DS001_03149` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_03149_007_std.; Box area (0.000077) below threshold (0.000100) in ANN_DS001_03149_010_std.
+- Image `DS001_03171` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_03171_009_std.
+- Image `DS001_03192` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03192_007_std (aspect: 5.50).
+- Image `DS001_03220` [REJECTED]: Box area (0.000066) below threshold (0.000100) in ANN_DS001_03220_014_std.
+- Image `DS001_03221` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_03221_009_std.
+- Image `DS001_03247` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03247_013_std (aspect: 6.50).
+- Image `DS001_03253` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03253_004_std (aspect: 5.20).
+- Image `DS001_03261` [REJECTED]: Box area (0.000029) below threshold (0.000100) in ANN_DS001_03261_053_std.
+- Image `DS001_03268` [REJECTED]: Box area (0.000034) below threshold (0.000100) in ANN_DS001_03268_004_std.
+- Image `DS001_03271` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_03271_029_std.
+- Image `DS001_03289` [REJECTED]: Box area (0.000098) below threshold (0.000100) in ANN_DS001_03289_001_std.; Box area (0.000085) below threshold (0.000100) in ANN_DS001_03289_007_std.; Box area (0.000060) below threshold (0.000100) in ANN_DS001_03289_015_std.
+- Image `DS001_03296` [REJECTED]: Elongated box detected in ANN_DS001_03296_031_std (aspect: 6.20).; Box area (0.000095) below threshold (0.000100) in ANN_DS001_03296_031_std.; Box area (0.000055) below threshold (0.000100) in ANN_DS001_03296_053_std.
+- Image `DS001_03327` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03327_047_std (aspect: 5.47).
+- Image `DS001_03357` [REJECTED]: Box area (0.000005) below threshold (0.000100) in ANN_DS001_03357_045_std.
+- Image `DS001_03359` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_03359_001_std.
+- Image `DS001_03360` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_03360_005_std.
+- Image `DS001_03378` [REJECTED]: Box area (0.000098) below threshold (0.000100) in ANN_DS001_03378_004_std.
+- Image `DS001_03381` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_03381_006_std.
+- Image `DS001_03396` [REJECTED]: Box area (0.000094) below threshold (0.000100) in ANN_DS001_03396_035_std.
+- Image `DS001_03398` [REJECTED]: Box area (0.000085) below threshold (0.000100) in ANN_DS001_03398_033_std.; Box area (0.000085) below threshold (0.000100) in ANN_DS001_03398_035_std.
+- Image `DS001_03448` [REJECTED]: Box area (0.000081) below threshold (0.000100) in ANN_DS001_03448_000_std.
+- Image `DS001_03504` [REJECTED]: Box area (0.000054) below threshold (0.000100) in ANN_DS001_03504_004_std.
+- Image `DS001_03519` [REJECTED]: Box area (0.000077) below threshold (0.000100) in ANN_DS001_03519_008_std.; Box area (0.000098) below threshold (0.000100) in ANN_DS001_03519_012_std.
+- Image `DS001_03523` [REJECTED]: Box area (0.000085) below threshold (0.000100) in ANN_DS001_03523_002_std.
+- Image `DS001_03525` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03525_023_std (aspect: 8.50).
+- Image `DS001_03528` [REJECTED]: Box area (0.000006) below threshold (0.000100) in ANN_DS001_03528_004_std.
+- Image `DS001_03529` [REJECTED]: Box area (0.000006) below threshold (0.000100) in ANN_DS001_03529_004_std.
+- Image `DS001_03559` [REJECTED]: Box area (0.000055) below threshold (0.000100) in ANN_DS001_03559_040_std.
+- Image `DS001_03561` [REJECTED]: Box area (0.000071) below threshold (0.000100) in ANN_DS001_03561_001_std.
+- Image `DS001_03565` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_03565_020_std.
+- Image `DS001_03580` [REJECTED]: Box area (0.000081) below threshold (0.000100) in ANN_DS001_03580_000_std.
+- Image `DS001_03609` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03609_011_std (aspect: 5.42).
+- Image `DS001_03613` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03613_021_std (aspect: 5.42).
+- Image `DS001_03643` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03643_004_std (aspect: 5.19).
+- Image `DS001_03656` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03656_000_std (aspect: 5.25).; Elongated box detected in ANN_DS001_03656_014_std (aspect: 6.25).
+- Image `DS001_03661` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03661_006_std (aspect: 6.00).; Elongated box detected in ANN_DS001_03661_007_std (aspect: 5.67).
+- Image `DS001_03680` [REJECTED]: Box area (0.000060) below threshold (0.000100) in ANN_DS001_03680_005_std.
+- Image `DS001_03691` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03691_005_std (aspect: 6.00).
+- Image `DS001_03704` [REJECTED]: Box area (0.000047) below threshold (0.000100) in ANN_DS001_03704_014_std.
+- Image `DS001_03778` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03778_024_std (aspect: 8.67).
+- Image `DS001_03800` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03800_015_std (aspect: 5.33).
+- Image `DS001_03812` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03812_005_std (aspect: 6.50).
+- Image `DS001_03832` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_03832_003_std.
+- Image `DS001_03833` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_03833_003_std.
+- Image `DS001_03859` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03859_031_std (aspect: 5.42).
+- Image `DS001_03924` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_03924_007_std.; Box area (0.000024) below threshold (0.000100) in ANN_DS001_03924_011_std.
+- Image `DS001_03925` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_03925_007_std.; Box area (0.000024) below threshold (0.000100) in ANN_DS001_03925_011_std.
+- Image `DS001_03927` [REJECTED]: Box area (0.000024) below threshold (0.000100) in ANN_DS001_03927_011_std.
+- Image `DS001_03935` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_03935_027_std.
+- Image `DS001_03939` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03939_019_std (aspect: 7.50).
+- Image `DS001_03944` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03944_006_std (aspect: 6.00).
+- Image `DS001_03958` [REJECTED]: Box area (0.000031) below threshold (0.000100) in ANN_DS001_03958_012_std.
+- Image `DS001_03979` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03979_006_std (aspect: 6.00).
+- Image `DS001_03999` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_03999_008_std (aspect: 6.83).
+- Image `DS001_04002` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04002_013_std (aspect: 5.87).
+- Image `DS001_04014` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04014_017_std (aspect: 5.50).
+- Image `DS001_04016` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04016_000_std (aspect: 5.42).
+- Image `DS001_04026` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_04026_004_std.
+- Image `DS001_04031` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_04031_000_std.
+- Image `DS001_04054` [REJECTED]: Box area (0.000055) below threshold (0.000100) in ANN_DS001_04054_000_std.
+- Image `DS001_04055` [REJECTED]: Box area (0.000055) below threshold (0.000100) in ANN_DS001_04055_000_std.
+- Image `DS001_04056` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04056_000_std (aspect: 9.20).
+- Image `DS001_04057` [REJECTED]: Box area (0.000061) below threshold (0.000100) in ANN_DS001_04057_000_std.
+- Image `DS001_04067` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04067_018_std (aspect: 5.25).
+- Image `DS001_04078` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04078_010_std (aspect: 6.88).
+- Image `DS001_04085` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04085_041_std (aspect: 6.88).
+- Image `DS001_04102` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04102_005_std (aspect: 6.00).; Elongated box detected in ANN_DS001_04102_010_std (aspect: 7.80).
+- Image `DS001_04103` [REJECTED]: Box area (0.000002) below threshold (0.000100) in ANN_DS001_04103_002_std.
+- Image `DS001_04104` [REJECTED]: Box area (0.000002) below threshold (0.000100) in ANN_DS001_04104_002_std.
+- Image `DS001_04105` [REJECTED]: Box area (0.000002) below threshold (0.000100) in ANN_DS001_04105_002_std.
+- Image `DS001_04113` [REJECTED]: Box area (0.000055) below threshold (0.000100) in ANN_DS001_04113_011_std.
+- Image `DS001_04114` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04114_011_std (aspect: 5.17).
+- Image `DS001_04115` [REJECTED]: Elongated box detected in ANN_DS001_04115_011_std (aspect: 10.00).; Box area (0.000024) below threshold (0.000100) in ANN_DS001_04115_011_std.
+- Image `DS001_04116` [REJECTED]: Box area (0.000055) below threshold (0.000100) in ANN_DS001_04116_011_std.
+- Image `DS001_04126` [REJECTED]: Box area (0.000098) below threshold (0.000100) in ANN_DS001_04126_040_std.
+- Image `DS001_04137` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04137_010_std (aspect: 5.33).
+- Image `DS001_04154` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04154_000_std (aspect: 5.83).
+- Image `DS001_04159` [REJECTED]: Box area (0.000067) below threshold (0.000100) in ANN_DS001_04159_038_std.
+- Image `DS001_04178` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04178_000_std (aspect: 6.00).
+- Image `DS001_04226` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04226_023_std (aspect: 6.33).; Elongated box detected in ANN_DS001_04226_025_std (aspect: 5.36).
+- Image `DS001_04238` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_04238_004_std.
+- Image `DS001_04254` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04254_017_std (aspect: 5.20).
+- Image `DS001_04288` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04288_017_std (aspect: 5.50).
+- Image `DS001_04295` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04295_005_std (aspect: 6.80).
+- Image `DS001_04344` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04344_007_std (aspect: 5.20).
+- Image `DS001_04345` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04345_004_std (aspect: 5.50).
+- Image `DS001_04353` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04353_050_std (aspect: 5.50).
+- Image `DS001_04363` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_04363_035_std.; Box area (0.000088) below threshold (0.000100) in ANN_DS001_04363_043_std.
+- Image `DS001_04364` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_04364_035_std.; Box area (0.000088) below threshold (0.000100) in ANN_DS001_04364_043_std.
+- Image `DS001_04379` [REJECTED]: Box area (0.000077) below threshold (0.000100) in ANN_DS001_04379_010_std.; Elongated box detected in ANN_DS001_04379_015_std (aspect: 5.44).
+- Image `DS001_04380` [REJECTED]: Box area (0.000059) below threshold (0.000100) in ANN_DS001_04380_015_std.
+- Image `DS001_04381` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_04381_015_std.
+- Image `DS001_04385` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04385_013_std (aspect: 5.67).
+- Image `DS001_04387` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04387_013_std (aspect: 5.67).
+- Image `DS001_04393` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04393_012_std (aspect: 5.20).
+- Image `DS001_04399` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04399_000_std (aspect: 5.67).
+- Image `DS001_04412` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04412_005_std (aspect: 5.20).
+- Image `DS001_04445` [REJECTED]: Box area (0.000024) below threshold (0.000100) in ANN_DS001_04445_002_std.; Box area (0.000088) below threshold (0.000100) in ANN_DS001_04445_025_std.
+- Image `DS001_04446` [REJECTED]: Box area (0.000024) below threshold (0.000100) in ANN_DS001_04446_002_std.; Box area (0.000088) below threshold (0.000100) in ANN_DS001_04446_025_std.
+- Image `DS001_04447` [REJECTED]: Box area (0.000024) below threshold (0.000100) in ANN_DS001_04447_002_std.; Box area (0.000088) below threshold (0.000100) in ANN_DS001_04447_025_std.
+- Image `DS001_04448` [REJECTED]: Box area (0.000038) below threshold (0.000100) in ANN_DS001_04448_002_std.
+- Image `DS001_04453` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04453_029_std (aspect: 5.83).
+- Image `DS001_04467` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04467_064_std (aspect: 5.33).
+- Image `DS001_04469` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_04469_031_std.
+- Image `DS001_04470` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_04470_031_std.
+- Image `DS001_04477` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04477_075_std (aspect: 6.50).
+- Image `DS001_04489` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_04489_027_std.
+- Image `DS001_04493` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04493_050_std (aspect: 5.75).
+- Image `DS001_04495` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04495_032_std (aspect: 6.50).; Elongated box detected in ANN_DS001_04495_033_std (aspect: 5.33).
+- Image `DS001_04504` [REJECTED]: Box area (0.000039) below threshold (0.000100) in ANN_DS001_04504_001_std.
+- Image `DS001_04505` [REJECTED]: Box area (0.000039) below threshold (0.000100) in ANN_DS001_04505_001_std.
+- Image `DS001_04519` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04519_034_std (aspect: 7.08).
+- Image `DS001_04522` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_04522_009_std.
+- Image `DS001_04523` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_04523_009_std.
+- Image `DS001_04524` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_04524_009_std.
+- Image `DS001_04525` [REJECTED]: Box area (0.000022) below threshold (0.000100) in ANN_DS001_04525_003_std.
+- Image `DS001_04527` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04527_103_std (aspect: 5.10).
+- Image `DS001_04529` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04529_056_std (aspect: 5.50).
+- Image `DS001_04550` [REJECTED]: Box area (0.000061) below threshold (0.000100) in ANN_DS001_04550_011_std.
+- Image `DS001_04552` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_04552_024_std.
+- Image `DS001_04553` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_04553_024_std.
+- Image `DS001_04556` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04556_046_std (aspect: 5.67).
+- Image `DS001_04557` [REJECTED]: Box area (0.000002) below threshold (0.000100) in ANN_DS001_04557_032_std.
+- Image `DS001_04558` [REJECTED]: Box area (0.000002) below threshold (0.000100) in ANN_DS001_04558_032_std.
+- Image `DS001_04578` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04578_041_std (aspect: 5.20).
+- Image `DS001_04586` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_04586_010_std.
+- Image `DS001_04589` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04589_004_std (aspect: 6.00).
+- Image `DS001_04606` [REJECTED]: Box area (0.000059) below threshold (0.000100) in ANN_DS001_04606_010_std.; Box area (0.000002) below threshold (0.000100) in ANN_DS001_04606_046_std.
+- Image `DS001_04607` [REJECTED]: Box area (0.000031) below threshold (0.000100) in ANN_DS001_04607_002_std.
+- Image `DS001_04611` [REJECTED]: Box area (0.000051) below threshold (0.000100) in ANN_DS001_04611_004_std.
+- Image `DS001_04631` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04631_000_std (aspect: 7.60).
+- Image `DS001_04641` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04641_019_std (aspect: 5.79).
+- Image `DS001_04648` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04648_000_std (aspect: 6.00).
+- Image `DS001_04661` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04664` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04664_010_std (aspect: 5.37).
+- Image `DS001_04668` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04668_010_std (aspect: 5.71).
+- Image `DS001_04677` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04677_016_std (aspect: 6.80).
+- Image `DS001_04678` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04678_002_std (aspect: 5.90).
+- Image `DS001_04686` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04686_006_std (aspect: 11.22).
+- Image `DS001_04688` [REVIEW QUEUE]: Heavily overlapping boxes between `ANN_DS001_04688_002_std` and `ANN_DS001_04688_007_std` (IoU: 0.86).
+- Image `DS001_04694` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04694_001_std (aspect: 5.24).
+- Image `DS001_04696` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04697` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04697_001_std (aspect: 5.69).
+- Image `DS001_04703` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04703_003_std (aspect: 7.36).
+- Image `DS001_04709` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04709_001_std (aspect: 11.30).
+- Image `DS001_04710` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04713` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04713_017_std (aspect: 6.26).
+- Image `DS001_04717` [REJECTED]: Box area (0.000061) below threshold (0.000100) in ANN_DS001_04717_012_std.
+- Image `DS001_04726` [REJECTED]: Elongated box detected in ANN_DS001_04726_010_std (aspect: 8.00).; Box area (0.000029) below threshold (0.000100) in ANN_DS001_04726_016_std.
+- Image `DS001_04731` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04731_002_std (aspect: 8.30).
+- Image `DS001_04740` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04740_034_std (aspect: 5.17).
+- Image `DS001_04745` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04745_020_std (aspect: 5.60).
+- Image `DS001_04748` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04748_000_std (aspect: 8.78).
+- Image `DS001_04778` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04788` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04788_000_std (aspect: 5.27).
+- Image `DS001_04795` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04802` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04805` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04805_001_std (aspect: 7.22).
+- Image `DS001_04807` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04807_003_std (aspect: 5.83).
+- Image `DS001_04818` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04818_005_std (aspect: 6.20).
+- Image `DS001_04830` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04830_004_std (aspect: 7.75).
+- Image `DS001_04834` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04834_006_std (aspect: 6.93).
+- Image `DS001_04836` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04836_010_std (aspect: 9.83).
+- Image `DS001_04838` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04838_010_std (aspect: 9.83).
+- Image `DS001_04841` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04841_005_std (aspect: 5.69).
+- Image `DS001_04856` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04858` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04859` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04860` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04860_009_std (aspect: 5.07).
+- Image `DS001_04865` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_04865_008_std.
+- Image `DS001_04866` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04866_008_std (aspect: 6.71).
+- Image `DS001_04874` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04874_003_std (aspect: 6.03).
+- Image `DS001_04876` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04887` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04887_008_std (aspect: 5.09).
+- Image `DS001_04891` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04891_008_std (aspect: 8.00).
+- Image `DS001_04895` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04898` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_04898_002_std.
+- Image `DS001_04909` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04909_008_std (aspect: 11.00).
+- Image `DS001_04913` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04913_007_std (aspect: 11.21).
+- Image `DS001_04914` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04914_001_std (aspect: 5.44).
+- Image `DS001_04919` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04919_032_std (aspect: 5.50).
+- Image `DS001_04924` [REVIEW QUEUE]: Heavily overlapping boxes between `ANN_DS001_04924_025_std` and `ANN_DS001_04924_028_std` (IoU: 0.92).
+- Image `DS001_04933` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04936` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04936_013_std (aspect: 6.25).
+- Image `DS001_04938` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04948` [REJECTED]: Box area (0.000061) below threshold (0.000100) in ANN_DS001_04948_024_std.
+- Image `DS001_04950` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04951` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04951_011_std (aspect: 5.33).
+- Image `DS001_04965` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04965_003_std (aspect: 6.93).
+- Image `DS001_04977` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04977_009_std (aspect: 5.16).
+- Image `DS001_04978` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04978_007_std (aspect: 5.33).
+- Image `DS001_04989` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04989_006_std (aspect: 5.20).
+- Image `DS001_04990` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04990_008_std (aspect: 5.28).
+- Image `DS001_04992` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_04999` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_04999_005_std (aspect: 7.50).; Elongated box detected in ANN_DS001_04999_008_std (aspect: 9.40).
+- Image `DS001_05005` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05007` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05007_006_std (aspect: 5.09).
+- Image `DS001_05009` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05009_014_std (aspect: 5.92).
+- Image `DS001_05010` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05010_001_std (aspect: 5.05).
+- Image `DS001_05012` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05012_004_std (aspect: 5.23).
+- Image `DS001_05017` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05017_013_std (aspect: 7.07).
+- Image `DS001_05020` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_05020_019_std.; Elongated box detected in ANN_DS001_05020_028_std (aspect: 6.00).
+- Image `DS001_05025` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05027` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05028` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05035` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_05035_000_std.
+- Image `DS001_05038` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05038_003_std (aspect: 6.27).
+- Image `DS001_05046` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05046_002_std (aspect: 7.67).
+- Image `DS001_05047` [REVIEW QUEUE]: Heavily overlapping boxes between `ANN_DS001_05047_007_std` and `ANN_DS001_05047_012_std` (IoU: 0.87).
+- Image `DS001_05059` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05066` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05066_022_std (aspect: 5.54).
+- Image `DS001_05067` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05070` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05070_001_std (aspect: 5.92).
+- Image `DS001_05079` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05080` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05090` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05091` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05092` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05092_007_std (aspect: 5.68).
+- Image `DS001_05098` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05102` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05102_007_std (aspect: 6.58).
+- Image `DS001_05111` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05111_004_std (aspect: 5.88).
+- Image `DS001_05123` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05123_025_std (aspect: 8.50).
+- Image `DS001_05141` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05141_019_std (aspect: 10.44).
+- Image `DS001_05144` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05144_000_std (aspect: 6.95).
+- Image `DS001_05149` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05151` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05158` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05158_010_std (aspect: 5.67).
+- Image `DS001_05167` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05173` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05173_014_std (aspect: 11.80).
+- Image `DS001_05177` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05177_002_std (aspect: 10.91).
+- Image `DS001_05178` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05178_019_std (aspect: 5.56).; Elongated box detected in ANN_DS001_05178_022_std (aspect: 5.28).; Elongated box detected in ANN_DS001_05178_038_std (aspect: 9.90).
+- Image `DS001_05181` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05181_003_std (aspect: 5.67).
+- Image `DS001_05199` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05199_018_std (aspect: 6.17).
+- Image `DS001_05200` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05200_010_std (aspect: 5.42).
+- Image `DS001_05214` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05214_007_std (aspect: 5.56).
+- Image `DS001_05215` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05215_010_std (aspect: 5.40).
+- Image `DS001_05229` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05229_016_std (aspect: 5.13).
+- Image `DS001_05246` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05246_008_std (aspect: 6.22).
+- Image `DS001_05247` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05247_000_std (aspect: 8.29).
+- Image `DS001_05253` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05253_005_std (aspect: 7.60).
+- Image `DS001_05265` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05265_004_std (aspect: 5.36).
+- Image `DS001_05270` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05270_012_std (aspect: 5.43).
+- Image `DS001_05273` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05273_012_std (aspect: 7.33).
+- Image `DS001_05277` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05277_004_std (aspect: 5.20).
+- Image `DS001_05314` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05314_006_std (aspect: 5.40).
+- Image `DS001_05320` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05320_000_std (aspect: 5.06).
+- Image `DS001_05336` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05336_021_std (aspect: 6.67).
+- Image `DS001_05341` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05341_004_std (aspect: 5.83).
+- Image `DS001_05343` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05343_006_std (aspect: 6.42).; Elongated box detected in ANN_DS001_05343_007_std (aspect: 5.60).; Elongated box detected in ANN_DS001_05343_008_std (aspect: 19.80).
+- Image `DS001_05346` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05346_004_std (aspect: 7.22).
+- Image `DS001_05350` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05350_004_std (aspect: 5.20).; Elongated box detected in ANN_DS001_05350_005_std (aspect: 5.71).; Elongated box detected in ANN_DS001_05350_006_std (aspect: 5.97).; Elongated box detected in ANN_DS001_05350_012_std (aspect: 11.75).; Elongated box detected in ANN_DS001_05350_016_std (aspect: 9.00).
+- Image `DS001_05354` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05354_024_std (aspect: 5.67).
+- Image `DS001_05364` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05364_008_std (aspect: 6.67).; Elongated box detected in ANN_DS001_05364_011_std (aspect: 10.20).; Elongated box detected in ANN_DS001_05364_018_std (aspect: 6.00).
+- Image `DS001_05365` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05365_006_std (aspect: 5.66).
+- Image `DS001_05380` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05380_002_std (aspect: 9.33).; Elongated box detected in ANN_DS001_05380_012_std (aspect: 8.33).; Elongated box detected in ANN_DS001_05380_037_std (aspect: 10.17).
+- Image `DS001_05398` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05398_032_std (aspect: 5.77).
+- Image `DS001_05406` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05406_010_std (aspect: 6.59).
+- Image `DS001_05409` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05409_001_std (aspect: 5.67).
+- Image `DS001_05412` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05412_007_std (aspect: 5.67).
+- Image `DS001_05420` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05420_000_std (aspect: 6.10).; Elongated box detected in ANN_DS001_05420_001_std (aspect: 5.18).
+- Image `DS001_05421` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05421_003_std (aspect: 6.39).
+- Image `DS001_05427` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05427_012_std (aspect: 5.91).
+- Image `DS001_05428` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05428_015_std (aspect: 5.07).
+- Image `DS001_05436` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05436_002_std (aspect: 5.60).
+- Image `DS001_05438` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05438_008_std (aspect: 8.06).
+- Image `DS001_05443` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05443_004_std (aspect: 5.18).
+- Image `DS001_05448` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05448_001_std (aspect: 5.74).; Elongated box detected in ANN_DS001_05448_003_std (aspect: 5.60).
+- Image `DS001_05449` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05449_013_std (aspect: 6.54).
+- Image `DS001_05450` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05450_013_std (aspect: 6.54).
+- Image `DS001_05453` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05453_017_std (aspect: 6.56).
+- Image `DS001_05467` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05467_030_std (aspect: 6.67).
+- Image `DS001_05472` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05472_011_std (aspect: 6.11).
+- Image `DS001_05477` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05477_011_std (aspect: 9.83).
+- Image `DS001_05496` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05496_003_std (aspect: 5.55).
+- Image `DS001_05499` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05499_002_std (aspect: 5.20).; Elongated box detected in ANN_DS001_05499_007_std (aspect: 5.79).
+- Image `DS001_05505` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05505_018_std (aspect: 5.08).
+- Image `DS001_05517` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05517_001_std (aspect: 5.31).
+- Image `DS001_05520` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05520_010_std (aspect: 5.50).; Elongated box detected in ANN_DS001_05520_013_std (aspect: 5.21).
+- Image `DS001_05521` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05521_000_std (aspect: 6.07).; Elongated box detected in ANN_DS001_05521_002_std (aspect: 5.03).
+- Image `DS001_05531` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05533` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05533_007_std (aspect: 7.97).
+- Image `DS001_05551` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05551_002_std (aspect: 5.40).
+- Image `DS001_05556` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05556_009_std (aspect: 5.50).
+- Image `DS001_05566` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05566_002_std (aspect: 5.52).
+- Image `DS001_05585` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05585_006_std (aspect: 10.53).
+- Image `DS001_05589` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05589_003_std (aspect: 7.60).
+- Image `DS001_05591` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05591_005_std (aspect: 5.32).
+- Image `DS001_05594` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05594_023_std (aspect: 5.07).
+- Image `DS001_05598` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05598_002_std (aspect: 7.43).
+- Image `DS001_05599` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05599_018_std (aspect: 5.31).
+- Image `DS001_05615` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05615_000_std (aspect: 5.06).; Elongated box detected in ANN_DS001_05615_007_std (aspect: 5.16).
+- Image `DS001_05616` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05616_009_std (aspect: 5.20).
+- Image `DS001_05618` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05618_001_std (aspect: 5.45).
+- Image `DS001_05625` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05625_008_std (aspect: 5.67).
+- Image `DS001_05628` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05628_025_std (aspect: 5.68).
+- Image `DS001_05632` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05632_019_std (aspect: 5.40).
+- Image `DS001_05643` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05643_008_std (aspect: 5.75).
+- Image `DS001_05648` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05648_006_std (aspect: 5.83).
+- Image `DS001_05652` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05652_008_std (aspect: 5.12).
+- Image `DS001_05657` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05657_020_std (aspect: 6.27).
+- Image `DS001_05664` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05664_008_std (aspect: 5.47).
+- Image `DS001_05672` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05672_003_std (aspect: 6.00).
+- Image `DS001_05678` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05678_016_std (aspect: 8.00).
+- Image `DS001_05680` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05680_029_std (aspect: 10.17).
+- Image `DS001_05684` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05684_012_std (aspect: 6.48).; Elongated box detected in ANN_DS001_05684_015_std (aspect: 14.75).
+- Image `DS001_05700` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05700_002_std (aspect: 5.11).; Elongated box detected in ANN_DS001_05700_003_std (aspect: 5.10).; Elongated box detected in ANN_DS001_05700_005_std (aspect: 5.45).
+- Image `DS001_05708` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05708_007_std (aspect: 5.79).
+- Image `DS001_05715` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05715_008_std (aspect: 7.00).
+- Image `DS001_05719` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05719_014_std (aspect: 6.25).
+- Image `DS001_05721` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05721_018_std (aspect: 5.17).
+- Image `DS001_05727` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05727_002_std (aspect: 8.50).; Elongated box detected in ANN_DS001_05727_004_std (aspect: 6.72).
+- Image `DS001_05739` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05739_003_std (aspect: 5.31).
+- Image `DS001_05740` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05740_002_std (aspect: 6.19).; Elongated box detected in ANN_DS001_05740_015_std (aspect: 6.75).
+- Image `DS001_05744` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05744_006_std (aspect: 5.12).
+- Image `DS001_05745` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05745_005_std (aspect: 5.27).
+- Image `DS001_05746` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05746_010_std (aspect: 7.11).
+- Image `DS001_05762` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05762_000_std (aspect: 5.60).; Elongated box detected in ANN_DS001_05762_001_std (aspect: 6.22).
+- Image `DS001_05768` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05768_008_std (aspect: 5.75).
+- Image `DS001_05774` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05774_007_std (aspect: 8.00).; Elongated box detected in ANN_DS001_05774_028_std (aspect: 5.67).
+- Image `DS001_05779` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05779_008_std (aspect: 6.42).
+- Image `DS001_05783` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05783_007_std (aspect: 5.05).
+- Image `DS001_05784` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05784_000_std (aspect: 8.42).
+- Image `DS001_05789` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05789_004_std (aspect: 6.91).
+- Image `DS001_05798` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05798_017_std (aspect: 5.07).
+- Image `DS001_05802` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05802_001_std (aspect: 5.50).
+- Image `DS001_05810` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05810_009_std (aspect: 5.05).
+- Image `DS001_05898` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05898_002_std (aspect: 8.40).
+- Image `DS001_05915` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05916` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_05927` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05927_000_std (aspect: 12.25).
+- Image `DS001_05947` [REJECTED]: Elongated box detected in ANN_DS001_05947_000_std (aspect: 5.14).; Elongated box detected in ANN_DS001_05947_024_std (aspect: 5.91).; Box area (0.000015) below threshold (0.000100) in ANN_DS001_05947_030_std.
+- Image `DS001_05958` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05958_001_std (aspect: 5.75).
+- Image `DS001_05959` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05959_014_std (aspect: 7.27).
+- Image `DS001_05968` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_05968_006_std (aspect: 5.18).
+- Image `DS001_06019` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06019_018_std (aspect: 6.45).
+- Image `DS001_06042` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_06082` [REJECTED]: Box area (0.000034) below threshold (0.000100) in ANN_DS001_06082_045_std.
+- Image `DS001_06089` [REJECTED]: Box area (0.000005) below threshold (0.000100) in ANN_DS001_06089_005_std.
+- Image `DS001_06106` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06106_001_std (aspect: 7.52).; Elongated box detected in ANN_DS001_06106_002_std (aspect: 7.47).; Elongated box detected in ANN_DS001_06106_003_std (aspect: 6.05).
+- Image `DS001_06129` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06129_001_std (aspect: 6.33).
+- Image `DS001_06130` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06130_001_std (aspect: 6.33).
+- Image `DS001_06137` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06137_008_std (aspect: 5.40).
+- Image `DS001_06144` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06144_002_std (aspect: 7.53).
+- Image `DS001_06155` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06155_000_std (aspect: 6.25).
+- Image `DS001_06197` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06197_004_std (aspect: 5.42).
+- Image `DS001_06198` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06198_006_std (aspect: 5.42).
+- Image `DS001_06208` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06208_010_std (aspect: 5.07).
+- Image `DS001_06215` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06215_001_std (aspect: 9.87).
+- Image `DS001_06220` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06220_002_std (aspect: 6.09).
+- Image `DS001_06229` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06229_007_std (aspect: 5.91).
+- Image `DS001_06233` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06233_015_std (aspect: 5.71).
+- Image `DS001_06258` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06258_010_std (aspect: 5.23).
+- Image `DS001_06260` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06260_015_std (aspect: 7.66).
+- Image `DS001_06263` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_06265` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_06266` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_06268` [REJECTED]: Box area (0.000059) below threshold (0.000100) in ANN_DS001_06268_001_std.
+- Image `DS001_06275` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06275_024_std (aspect: 7.67).
+- Image `DS001_06276` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06276_002_std (aspect: 5.45).
+- Image `DS001_06309` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06309_001_std (aspect: 8.91).
+- Image `DS001_06316` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_06322` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_06323` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06323_004_std (aspect: 6.25).
+- Image `DS001_06324` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_06325` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_06432` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06432_007_std (aspect: 5.20).
+- Image `DS001_06620` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06620_000_std (aspect: 6.50).
+- Image `DS001_06803` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06803_036_std (aspect: 6.50).
+- Image `DS001_06851` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06851_000_std (aspect: 7.67).
+- Image `DS001_06897` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06897_012_std (aspect: 7.00).
+- Image `DS001_06913` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06913_011_std (aspect: 5.50).
+- Image `DS001_06917` [REJECTED]: Box area (0.000094) below threshold (0.000100) in ANN_DS001_06917_012_std.
+- Image `DS001_06952` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06952_002_std (aspect: 5.20).
+- Image `DS001_06972` [REJECTED]: Box area (0.000098) below threshold (0.000100) in ANN_DS001_06972_037_std.
+- Image `DS001_06981` [REJECTED]: Box area (0.000006) below threshold (0.000100) in ANN_DS001_06981_004_std.
+- Image `DS001_06990` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_06990_008_std (aspect: 7.25).
+- Image `DS001_06992` [REJECTED]: Box area (0.000074) below threshold (0.000100) in ANN_DS001_06992_008_std.
+- Image `DS001_07004` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_07004_015_std.; Box area (0.000037) below threshold (0.000100) in ANN_DS001_07004_024_std.
+- Image `DS001_07006` [REJECTED]: Box area (0.000051) below threshold (0.000100) in ANN_DS001_07006_010_std.
+- Image `DS001_07008` [REJECTED]: Box area (0.000034) below threshold (0.000100) in ANN_DS001_07008_009_std.
+- Image `DS001_07058` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_07058_003_std.
+- Image `DS001_07068` [REJECTED]: Box area (0.000068) below threshold (0.000100) in ANN_DS001_07068_008_std.
+- Image `DS001_07106` [REJECTED]: Elongated box detected in ANN_DS001_07106_030_std (aspect: 9.00).; Box area (0.000022) below threshold (0.000100) in ANN_DS001_07106_030_std.; Box area (0.000094) below threshold (0.000100) in ANN_DS001_07106_032_std.; Box area (0.000073) below threshold (0.000100) in ANN_DS001_07106_033_std.
+- Image `DS001_07107` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07107_011_std (aspect: 7.25).; Elongated box detected in ANN_DS001_07107_014_std (aspect: 8.50).
+- Image `DS001_07112` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_07112_004_std.
+- Image `DS001_07113` [REJECTED]: Box area (0.000018) below threshold (0.000100) in ANN_DS001_07113_002_std.
+- Image `DS001_07136` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_07136_022_std.
+- Image `DS001_07156` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07156_066_std (aspect: 5.17).
+- Image `DS001_07159` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07159_020_std (aspect: 5.67).
+- Image `DS001_07167` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_07167_027_std.
+- Image `DS001_07174` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07174_018_std (aspect: 6.33).
+- Image `DS001_07182` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07182_003_std (aspect: 6.50).
+- Image `DS001_07184` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07184_001_std (aspect: 5.50).
+- Image `DS001_07195` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07195_053_std (aspect: 5.50).
+- Image `DS001_07201` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_07201_029_std.; Box area (0.000092) below threshold (0.000100) in ANN_DS001_07201_030_std.
+- Image `DS001_07202` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_07202_029_std.; Box area (0.000092) below threshold (0.000100) in ANN_DS001_07202_030_std.
+- Image `DS001_07203` [REJECTED]: Elongated box detected in ANN_DS001_07203_008_std (aspect: 5.60).; Box area (0.000085) below threshold (0.000100) in ANN_DS001_07203_008_std.
+- Image `DS001_07204` [REJECTED]: Elongated box detected in ANN_DS001_07204_021_std (aspect: 6.00).; Box area (0.000092) below threshold (0.000100) in ANN_DS001_07204_021_std.; Box area (0.000088) below threshold (0.000100) in ANN_DS001_07204_042_std.
+- Image `DS001_07206` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07206_022_std (aspect: 7.20).
+- Image `DS001_07211` [REJECTED]: Box area (0.000059) below threshold (0.000100) in ANN_DS001_07211_015_std.
+- Image `DS001_07212` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07212_017_std (aspect: 7.80).
+- Image `DS001_07214` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07214_005_std (aspect: 5.50).
+- Image `DS001_07222` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07222_063_std (aspect: 6.25).; Elongated box detected in ANN_DS001_07222_100_std (aspect: 5.20).
+- Image `DS001_07239` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07239_058_std (aspect: 5.67).
+- Image `DS001_07248` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07248_035_std (aspect: 5.10).
+- Image `DS001_07251` [REJECTED]: Box area (0.000073) below threshold (0.000100) in ANN_DS001_07251_034_std.
+- Image `DS001_07252` [REJECTED]: Box area (0.000002) below threshold (0.000100) in ANN_DS001_07252_032_std.
+- Image `DS001_07256` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07256_076_std (aspect: 7.67).
+- Image `DS001_07259` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07259_032_std (aspect: 5.67).
+- Image `DS001_07264` [REJECTED]: Box area (0.000059) below threshold (0.000100) in ANN_DS001_07264_010_std.; Box area (0.000002) below threshold (0.000100) in ANN_DS001_07264_046_std.
+- Image `DS001_07267` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07267_019_std (aspect: 7.19).
+- Image `DS001_07268` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_07277` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_07278` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_07279` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07279_008_std (aspect: 9.00).
+- Image `DS001_07280` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07280_008_std (aspect: 9.33).
+- Image `DS001_07283` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_07286` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07286_004_std (aspect: 10.46).
+- Image `DS001_07294` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07294_006_std (aspect: 10.05).
+- Image `DS001_07297` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07297_006_std (aspect: 6.11).
+- Image `DS001_07301` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07301_002_std (aspect: 5.71).; Elongated box detected in ANN_DS001_07301_003_std (aspect: 5.86).; Elongated box detected in ANN_DS001_07301_004_std (aspect: 6.77).
+- Image `DS001_07315` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07315_001_std (aspect: 5.80).
+- Image `DS001_07316` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07316_001_std (aspect: 5.80).
+- Image `DS001_07348` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07348_006_std (aspect: 6.26).
+- Image `DS001_07349` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07349_012_std (aspect: 6.61).
+- Image `DS001_07352` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_07368` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07368_003_std (aspect: 6.94).
+- Image `DS001_07370` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07370_015_std (aspect: 6.11).
+- Image `DS001_07373` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07373_010_std (aspect: 6.33).; Elongated box detected in ANN_DS001_07373_012_std (aspect: 7.00).
+- Image `DS001_07376` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07376_012_std (aspect: 5.06).
+- Image `DS001_07384` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07384_007_std (aspect: 5.75).
+- Image `DS001_07389` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07389_003_std (aspect: 7.33).
+- Image `DS001_07393` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07393_002_std (aspect: 6.00).
+- Image `DS001_07416` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07416_005_std (aspect: 5.20).
+- Image `DS001_07417` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07417_004_std (aspect: 5.33).; Elongated box detected in ANN_DS001_07417_011_std (aspect: 5.92).
+- Image `DS001_07423` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07423_021_std (aspect: 5.36).
+- Image `DS001_07429` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07429_015_std (aspect: 5.10).; Elongated box detected in ANN_DS001_07429_022_std (aspect: 5.33).
+- Image `DS001_07446` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07446_007_std (aspect: 5.52).
+- Image `DS001_07447` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07447_034_std (aspect: 8.41).
+- Image `DS001_07448` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07448_002_std (aspect: 8.50).; Elongated box detected in ANN_DS001_07448_011_std (aspect: 5.36).
+- Image `DS001_07463` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07463_004_std (aspect: 5.83).
+- Image `DS001_07471` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07471_009_std (aspect: 5.50).
+- Image `DS001_07486` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07486_017_std (aspect: 5.09).; Elongated box detected in ANN_DS001_07486_024_std (aspect: 6.60).
+- Image `DS001_07488` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07488_001_std (aspect: 5.58).
+- Image `DS001_07490` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07490_008_std (aspect: 9.00).
+- Image `DS001_07504` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07504_001_std (aspect: 8.75).
+- Image `DS001_07505` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07505_000_std (aspect: 5.18).
+- Image `DS001_07517` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07517_012_std (aspect: 5.74).
+- Image `DS001_07520` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07520_003_std (aspect: 5.74).
+- Image `DS001_07546` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07546_025_std (aspect: 6.00).
+- Image `DS001_07572` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07572_016_std (aspect: 5.52).
+- Image `DS001_07573` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07573_016_std (aspect: 5.52).
+- Image `DS001_07575` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07575_005_std (aspect: 5.79).
+- Image `DS001_07577` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07577_001_std (aspect: 5.29).
+- Image `DS001_07579` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07579_010_std (aspect: 6.60).
+- Image `DS001_07581` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07581_021_std (aspect: 5.11).
+- Image `DS001_07582` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07582_012_std (aspect: 14.00).
+- Image `DS001_07596` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07596_018_std (aspect: 5.67).
+- Image `DS001_07611` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07611_006_std (aspect: 6.58).
+- Image `DS001_07616` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07616_001_std (aspect: 5.29).
+- Image `DS001_07639` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_07641` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07641_013_std (aspect: 5.80).
+- Image `DS001_07652` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07652_000_std (aspect: 6.53).; Elongated box detected in ANN_DS001_07652_001_std (aspect: 19.60).; Elongated box detected in ANN_DS001_07652_002_std (aspect: 5.82).
+- Image `DS001_07672` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07672_001_std (aspect: 5.55).
+- Image `DS001_07703` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_07703_069_std.; Elongated box detected in ANN_DS001_07703_096_std (aspect: 5.17).
+- Image `DS001_07706` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07706_012_std (aspect: 5.43).
+- Image `DS001_07733` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07733_003_std (aspect: 5.56).
+- Image `DS001_07749` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07749_018_std (aspect: 5.13).
+- Image `DS001_07752` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07752_012_std (aspect: 6.94).
+- Image `DS001_07753` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07753_002_std (aspect: 10.50).
+- Image `DS001_07767` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07767_006_std (aspect: 6.21).
+- Image `DS001_07768` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07768_000_std (aspect: 5.25).
+- Image `DS001_07774` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07774_007_std (aspect: 6.80).
+- Image `DS001_07783` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_07788` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07788_009_std (aspect: 9.75).
+- Image `DS001_07790` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_07790_005_std (aspect: 6.94).
+- Image `DS001_07798` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_07803` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_08062` [REJECTED]: Box area (0.000031) below threshold (0.000100) in ANN_DS001_08062_003_std.
+- Image `DS001_08073` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08073_008_std (aspect: 5.83).
+- Image `DS001_08104` [REJECTED]: Box area (0.000088) below threshold (0.000100) in ANN_DS001_08104_014_std.; Box area (0.000094) below threshold (0.000100) in ANN_DS001_08104_016_std.
+- Image `DS001_08152` [REJECTED]: Box area (0.000005) below threshold (0.000100) in ANN_DS001_08152_015_std.
+- Image `DS001_08161` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08161_008_std (aspect: 5.42).
+- Image `DS001_08175` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_08175_013_std.; Box area (0.000088) below threshold (0.000100) in ANN_DS001_08175_019_std.; Box area (0.000098) below threshold (0.000100) in ANN_DS001_08175_025_std.
+- Image `DS001_08177` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08177_025_std (aspect: 8.50).
+- Image `DS001_08196` [REJECTED]: Box area (0.000015) below threshold (0.000100) in ANN_DS001_08196_004_std.
+- Image `DS001_08210` [REJECTED]: Box area (0.000060) below threshold (0.000100) in ANN_DS001_08210_039_std.
+- Image `DS001_08227` [REJECTED]: Box area (0.000098) below threshold (0.000100) in ANN_DS001_08227_018_std.; Box area (0.000082) below threshold (0.000100) in ANN_DS001_08227_027_std.; Box area (0.000092) below threshold (0.000100) in ANN_DS001_08227_031_std.
+- Image `DS001_08237` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_08237_029_std.; Box area (0.000092) below threshold (0.000100) in ANN_DS001_08237_030_std.
+- Image `DS001_08238` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08238_040_std (aspect: 6.00).
+- Image `DS001_08250` [REJECTED]: Box area (0.000092) below threshold (0.000100) in ANN_DS001_08250_031_std.
+- Image `DS001_08261` [REJECTED]: Box area (0.000039) below threshold (0.000100) in ANN_DS001_08261_001_std.
+- Image `DS001_08262` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08262_007_std (aspect: 5.50).; Elongated box detected in ANN_DS001_08262_013_std (aspect: 5.45).
+- Image `DS001_08271` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_08271_034_std.
+- Image `DS001_08272` [REJECTED]: Box area (0.000049) below threshold (0.000100) in ANN_DS001_08272_034_std.
+- Image `DS001_08276` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08276_036_std (aspect: 6.25).
+- Image `DS001_08293` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08293_000_std (aspect: 6.12).
+- Image `DS001_08295` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08295_003_std (aspect: 5.62).
+- Image `DS001_08311` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08311_015_std (aspect: 7.67).
+- Image `DS001_08312` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08312_011_std (aspect: 6.17).
+- Image `DS001_08316` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08316_003_std (aspect: 7.20).
+- Image `DS001_08337` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08337_003_std (aspect: 5.35).; Elongated box detected in ANN_DS001_08337_008_std (aspect: 5.31).
+- Image `DS001_08346` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08346_001_std (aspect: 7.60).
+- Image `DS001_08354` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08354_005_std (aspect: 5.04).
+- Image `DS001_08357` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_08358` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08358_015_std (aspect: 6.09).
+- Image `DS001_08364` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_08365` [REVIEW QUEUE]: Image contains zero annotation labels.
+- Image `DS001_08367` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08367_020_std (aspect: 7.00).
+- Image `DS001_08377` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08377_000_std (aspect: 5.13).
+- Image `DS001_08385` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08385_008_std (aspect: 7.92).
+- Image `DS001_08388` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08388_008_std (aspect: 5.29).
+- Image `DS001_08392` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08392_001_std (aspect: 15.17).
+- Image `DS001_08406` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08406_015_std (aspect: 6.33).
+- Image `DS001_08413` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08413_011_std (aspect: 5.12).
+- Image `DS001_08417` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08417_001_std (aspect: 6.10).
+- Image `DS001_08436` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08436_022_std (aspect: 5.09).
+- Image `DS001_08438` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08438_000_std (aspect: 5.45).
+- Image `DS001_08441` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08441_001_std (aspect: 5.40).; Elongated box detected in ANN_DS001_08441_007_std (aspect: 5.20).
+- Image `DS001_08444` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08444_002_std (aspect: 6.50).
+- Image `DS001_08453` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08453_002_std (aspect: 6.39).
+- Image `DS001_08457` [REVIEW QUEUE]: Elongated box detected in ANN_DS001_08457_012_std (aspect: 8.50).
